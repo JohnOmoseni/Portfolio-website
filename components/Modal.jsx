@@ -1,5 +1,6 @@
 import { CgClose } from "react-icons/cg";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const animateModal = {
   hidden: { opacity: 0, scale: 0.2 },
@@ -42,7 +43,7 @@ function Modal({ setOpenModal, imgSrc }) {
         <CgClose size="30" />
       </span>
       <div className="modal-img-box modal" onClick={e => e.stopPropagation()}>
-        <img src={imgSrc} />
+        <Image src={imgSrc} alt="" />
       </div>
     </motion.div>
   );

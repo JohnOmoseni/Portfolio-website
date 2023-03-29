@@ -17,7 +17,7 @@ function AboutBody({ variant }) {
       </p>
 
       <div className="tools">
-        <p>Here are a few technologies I've been working with recently:</p>
+        <p>Here are a few technologies I&lsquo;ve been working with recently:</p>
 
         <div className="skills">
           <Skills title="JavaScript(ES6+)" />

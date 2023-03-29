@@ -56,7 +56,7 @@ function NewsLetter() {
 
       <div className="container">
         <p className="fw-semi-bold">
-          Subscribe to get information about any new projects that I'm working on
+          Subscribe to get information about any new projects that I&lsquo;m working on
         </p>
 
         <form ref={form} onSubmit={subscribe}>
