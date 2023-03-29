@@ -1,0 +1,64 @@
+@use '../abstracts/' as *;
+
+.about {
+  .about-body {
+    margin-bottom: $pad-300;
+
+    >* {
+      padding-block: $pad-200;
+    }
+
+    .skills {
+      margin: $pad-100;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: $pad-100 $pad-300;
+
+      .skill {
+        @include flex-row($justify: flex-start);
+        gap: $pad-100;
+
+      }
+    }
+  }
+
+  .img-container {
+    width: 280px;
+    height: 280px;
+    margin: $pad-600 auto $pad-400;
+    border-radius: $br-round;
+    padding: $pad-200;
+    transition: $transition;
+    overflow: hidden;
+    box-shadow: 2px 3px 8px rgba(black, 0.5),
+      0px -1px 3px rgba(white, 0.2);
+    filter: grayscale(60%) contrast(1) brightness(60%);
+
+    &:hover {
+      filter: none;
+
+      img {
+        transition: $transition;
+        scale: 1.08;
+      }
+    }
+  }
+}
+
+@mixin about-laptop() {
+  .about {
+    .content {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: $pad-500;
+
+      .img-container {
+        width: 300px;
+        height: 300px;
+        align-self: center;
+        justify-self: center;
+        margin: 0;
+      }
+    }
+  }
+}

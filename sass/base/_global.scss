@@ -1,0 +1,100 @@
+@use "../abstracts/index" as *;
+
+body {
+  // @include bg-image(url("/public/images/pexel1.669439dcbd6638db8b3b.jpg"));
+  background-color: #181818;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden auto;
+}
+
+.swal2-container {
+  .swal2-icon {
+    margin: 1em auto 0.6em
+  }
+
+  .swal2-title {
+    color: white;
+    font-size: $fs-600;
+    text-shadow: $ts-100;
+    -webkit-text-stroke: 2px #333;
+  }
+
+  .swal2-html-container {
+    margin: $pad-100 0 $pad-300;
+  }
+
+  .swal2-actions .swal2-confirm {
+    background: var(--text-clr-variant-200);
+    letter-spacing: 1px;
+    outline: none;
+  }
+}
+
+.wrapper {
+  width: min(100%, 1800px);
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.wrapper a {
+  font-weight: $fw-semi-bold;
+  color: inherit;
+
+  &:hover {
+    color: var(--text-clr-variant-200);
+  }
+}
+
+.wrapper :is(a, .icon, button) {
+  cursor: pointer;
+}
+
+.wrapper :is(a, span) {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: inherit;
+}
+
+.wrapper button {
+  display: inline-block;
+  font-size: $fs-button;
+}
+
+.wrapper button,
+.wrapper button:hover,
+.wrapper button:focus,
+.wrapper button:focus-visible {
+  outline: 1px solid #00bd8e22;
+  outline-offset: 0px;
+}
+
+.wrapper .truncate {
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #191919;
+  border: 1px solid #222;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #222;
+}

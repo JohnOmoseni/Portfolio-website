@@ -1,0 +1,15 @@
+@use "../abstracts/" as *;
+
+.loader {
+  overflow: hidden;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+
+  .loader-inner {
+    @include flex-column();
+    align-items: center;
+    gap: 1.5em;
+  }
+
+}

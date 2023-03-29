@@ -1,0 +1,129 @@
+@use '../abstracts/' as *;
+@use '../components/card' as *;
+
+.projects {
+  .card-container {
+    position: relative;
+    margin: $pad-500 0;
+    @include flex-column();
+    @include card();
+    gap: $pad-400;
+  }
+
+  .view-more {
+    width: 100%;
+    margin: $pad-300 auto;
+    gap: $pad-100;
+
+    a {
+      @include flex-row();
+      font-size: $fs-300;
+      font-family: $ff-variant;
+      letter-spacing: $ls-100;
+      text-shadow: $ts-100;
+
+      &:hover * {
+        fill: var(--text-clr-variant-200);
+        stroke: var(--text-clr-variant-200);
+      }
+    }
+
+    span {
+      display: inline-block;
+      line-height: 1;
+      margin-top: 3px;
+    }
+  }
+}
+
+@mixin projects-laptop {
+  .projects {
+    width: 85%;
+    margin: auto;
+
+    .card-container {
+      gap: 5em;
+
+      .card {
+
+        .card-content {
+          width: 50%;
+          box-shadow: 0 0 0;
+          box-shadow: -3px 0px 3px rgba(black, .2);
+
+          .project-thumbnail {
+            display: none;
+          }
+
+          .summary {
+            background: #181818;
+            border-radius: $br-light;
+            padding: $pad-400;
+            box-shadow: $bs-100;
+            width: 120%;
+          }
+
+          .tech-tools {
+            gap: 6px $pad-300;
+
+            li {
+              text-align: right;
+            }
+          }
+        }
+
+        .img-container {
+          display: block;
+          width: 50%;
+          height: 100%;
+          max-height: 350px;
+          position: absolute;
+          border-radius: $br-light;
+          top: 0;
+          right: 0;
+          z-index: -1;
+          border-right: 2px solid var(--text-clr-variant);
+          box-shadow: 2px 2px 12px 5px rgba(black, 0.4);
+          transition: $transition;
+          filter: grayscale(60%) contrast(1) brightness(60%);
+
+          &:hover {
+            filter: none;
+          }
+        }
+
+      }
+
+      .card:nth-child(even) {
+        .card-content {
+          margin-left: auto;
+          text-align: right;
+          width: 60%;
+          box-shadow: 3px 0px 3px rgba(black, .2);
+
+        }
+
+        .featured {
+          order: 2;
+        }
+
+        .summary {
+          width: 100%;
+        }
+
+        .tech-tools {
+          li {
+            margin-left: auto;
+          }
+        }
+
+        .img-container {
+          left: 0;
+          border-left: 2px solid var(--text-clr-variant);
+          border-right: none;
+        }
+      }
+
+    }
+  }
+}

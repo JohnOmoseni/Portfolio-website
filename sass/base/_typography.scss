@@ -1,0 +1,25 @@
+@use '../abstracts/' as *;
+
+
+h1 {
+  font-size: $fs-primary-header;
+  font-family: $ff-primary-header;
+  font-weight: $fw-bold;
+  line-height: 1.4;
+  color: var(--text-grey-100);
+  text-shadow: $ts-200;
+}
+
+h2 {
+  font-size: $fs-secondary-header;
+  font-family: $ff-primary-header;
+  font-weight: $fw-semi-bold;
+  line-height: 1.2;
+  color: var(--text-grey-100);
+  text-shadow: $ts-200;
+}
+
+h3 {
+  font-size: $fs-subtitle;
+  line-height: 1.1;
+}

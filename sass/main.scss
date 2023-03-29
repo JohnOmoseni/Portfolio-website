@@ -1,0 +1,28 @@
+@use './abstracts/' as *;
+@use './base/' as *;
+
+@use './layouts/loader' as *;
+@use './layouts/sidebar' as *;
+@use './layouts/menu' as *;
+
+@use './layouts/header' as *;
+@use './layouts/banner' as *;
+@use './layouts/main' as *;
+@use './layouts/footer' as *;
+
+@media screen and (max-width: 400px) {
+  @include gallery-mobile();
+}
+
+@media screen and (min-width: 600px) {
+  @include main-tablet();
+}
+
+@media screen and (min-width: 760px) {
+  @include sidebar-laptop();
+  @include menu-laptop();
+  @include header-laptop();
+  @include banner-laptop();
+  @include main-laptop();
+  @include footer-laptop();
+}

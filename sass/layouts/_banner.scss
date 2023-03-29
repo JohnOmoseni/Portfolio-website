@@ -1,0 +1,172 @@
+@use "../abstracts/" as *;
+@use "../components/button" as *;
+@use "../components/bubbles" as *;
+
+.banner {
+  --clr-variant: var(--text-clr-variant);
+
+  @include bg-image();
+  position: relative;
+  min-height: 100vh;
+  background-blend-mode: darken;
+
+  padding: 20vh $pad-200 $pad-200;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: $transition;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+
+  &::before {
+    content: '';
+    position: absolute;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.4) 15%, transparent) !important;
+    inset: 0;
+    z-index: -1;
+  }
+
+
+  .column-1 {
+    color: var(--txt-white);
+    width: 100%;
+    padding: 0 $pad-200;
+
+
+    p.tagline {
+      font-family: $ff-variant;
+      font-size: $fs-250;
+      line-height: 1.2;
+      letter-spacing: $ls-100;
+      color: var(--text-clr-variant);
+      color: var(--clr-variant);
+      text-align: center;
+    }
+
+    .banner-title {
+      @include flex-column();
+      align-items: center;
+      gap: 0;
+    }
+
+    .flex-container {
+      display: flex;
+      gap: 1px;
+
+      text-align: center;
+
+      h1 {
+        color: var(--text-white);
+        line-height: 0.9;
+        margin-top: $pad-50;
+        font-size: $fs-primary-header;
+      }
+
+      &.offset {
+        margin: -14px 0 0;
+      }
+    }
+
+    .changing-words {
+      --clr-variant: hsla(0, 0%, 54%, 0.6);
+
+      padding: 0.2em 0 0;
+      min-height: 50px;
+      color: var(--clr-variant);
+      line-height: 1.2;
+      font-size: $fs-600;
+      font-family: $ff-variant;
+      text-shadow: $ts-200;
+      text-align: center;
+      -webkit-text-stroke: var(--clr-variant) 1px;
+    }
+
+
+    p.text {
+      margin: $pad-300 auto;
+      word-spacing: 2px;
+      font-weight: bold;
+      color: var(--text-grey-200);
+      letter-spacing: $ls-100;
+      text-align: center;
+      max-width: 70ch;
+    }
+
+    .banner-btn {
+      display: flex;
+      width: max-content;
+      margin: $pad-500 auto;
+    }
+  }
+
+  .column-2 {
+    width: 380px;
+    height: 380px;
+    pointer-events: none;
+  }
+}
+
+@mixin banner-tablet() {}
+
+@mixin banner-laptop() {
+  .banner {
+    --bottom: 5vh;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $pad-200;
+    padding: 20vh 7% var(--bottom);
+
+    .column-1 {
+      position: relative;
+      align-items: flex-start;
+
+      p.tagline {
+        text-align: left;
+        margin-left: 0.5em;
+      }
+
+      .banner-title {
+        display: block;
+        margin-left: -10px;
+      }
+
+      .flex-container {
+        text-align: center;
+
+        h1 {
+          line-height: 0.9
+        }
+
+        &.offset {
+          margin-top: -18px;
+        }
+      }
+
+      .changing-words {
+        text-align: left;
+      }
+
+      p.text {
+        max-width: 50ch;
+        text-align: left;
+        margin: $pad-400 0;
+      }
+
+      .banner-btn {
+        margin: $pad-500 0;
+      }
+    }
+
+    .column-2 {
+      position: relative;
+      top: -5%;
+      justify-self: center;
+      padding-inline: 1em;
+      width: 550px;
+      height: 550px;
+    }
+  }
+}
