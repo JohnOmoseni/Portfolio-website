@@ -12,19 +12,20 @@ $transition-200: all 0.4s linear;
 $backdrop: blur(1em);
 
 // Padding
-$pad-50: 0.2em;
-$pad-100: 0.35em;
-$pad-150: 0.6em;
-$pad-200: 0.8em;
-$pad-300: 1em;
-$pad-400: 1.2em;
-$pad-500: 1.5em;
-$pad-500: 2em;
-$pad-600: 2.5em;
-$pad-700: 3em;
-$pad-800: 4em;
+$pad-50: 0.2rem;
+$pad-100: 0.35rem;
+$pad-150: 0.6rem;
+$pad-200: 0.8rem;
+$pad-300: 1rem;
+$pad-400: 1.2rem;
+$pad-500: 1.5rem;
+$pad-500: 2rem;
+$pad-600: 2.5rem;
+$pad-700: 3rem;
+$pad-800: 4rem;
 
 // Stacking
+$z-index-100: 10;
 $z-index-200: 20;
 $z-index-300: 30;
 $z-index-400: 40;
@@ -43,10 +44,9 @@ $ts-300: 3px 3px 4px rgba(black, 0.8),
 // Box-Shadow
 $bs-100: 0px 2px 10px 2px rgba(black, 0.3);
 $bs-200: 3px 3px 10px 3px rgba(black, 0.4);
-$bs-300: 1px 2px 10px rgba(black, 0.5),
-  inset -2px -2px 1px rgba(black, 0.4),
-  inset 0px 0px 5px rgba(black, 0.3);
-
+$bs-300: 1px 2px 6px rgba(0, 0, 0, 0.3),
+  inset -2px -2px 1px rgba(0, 0, 0, 0.2),
+  inset 0px 0px 5px rgba(0, 0, 0, 0.3);
 $bs-ridge: inset 3px 3px rgba(black, 0.6),
   inset -1px -1px rgba(white, 0.2);
 

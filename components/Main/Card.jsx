@@ -2,16 +2,31 @@ import { FaGithub } from "react-icons/fa";
 import { BsBoxArrowUpRight } from "react-icons/bs";
 
 import Image from "next/image";
+import { motion } from "framer-motion";
 
-function Card({ title, imgSrc, body, tools }) {
+const cardVariant = {
+  hidden: { x: "100vw", opacity: 0 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 1.5, ease: "easeIn" },
+  },
+};
+
+function Card({ title, imgSrc, body, tools, website, github }) {
   return (
-    <div className="card">
+    <motion.div
+      className="card"
+      variants={cardVariant}
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+    >
       <div className="card-content">
         <div className="top">
           <span className="featured">Featured Project</span>
           <span className="links">
             <a
-              href="https://www.github.com/bchiang7"
+              href={github}
               aria-label="Github Link"
               target="_blank"
               rel="noreferrer noopener"
@@ -20,7 +35,7 @@ function Card({ title, imgSrc, body, tools }) {
               <FaGithub fill="#ccc" size="18" strokeWidth="1" />
             </a>
             <a
-              href="https://halcyon-theme.netlify.com/"
+              href={website}
               aria-label="External Link"
               target="_blank"
               rel="noreferrer noopener"
@@ -31,11 +46,17 @@ function Card({ title, imgSrc, body, tools }) {
           </span>
         </div>
 
-        <a href="https://halcyon-theme.netlify.com/">
+        <a href={website} aria-label="External Link" target="_blank" rel="noreferrer noopener">
           <h2 className="project-title">{title}</h2>
         </a>
 
-        <a href="https://halcyon-theme.netlify.com/" className="project-thumbnail">
+        <a
+          href={website}
+          className="project-thumbnail"
+          aria-label="External Link"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           <Image src={imgSrc} alt={`${title}_img`} placeholder="blur" />
         </a>
 
@@ -47,10 +68,16 @@ function Card({ title, imgSrc, body, tools }) {
           ))}
         </ul>
       </div>
-      <a href="https://halcyon-theme.netlify.com/" className="img-container">
+      <a
+        href={website}
+        className="img-container"
+        aria-label="External Link"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
         <Image src={imgSrc} alt={`${title}_img`} placeholder="blur" />
       </a>
-    </div>
+    </motion.div>
   );
 }
 

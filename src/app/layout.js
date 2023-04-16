@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Johnny Omoseni || Front End Dev",
+  title: "Johnny Omoseni || Software Developer",
   description: "Johnny Omoseni Portfolio",
-  themeColor: "#000",
+  themeColor: "#181818",
 };
 
 export default function RootLayout({ children }) {

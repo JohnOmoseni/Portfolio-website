@@ -1,19 +1,18 @@
 @font-face {
   font-family: 'GtWalsheima';
-  src: url('/assets/fonts/GTWalsheimPro-Black.ttf');
+  src: url('/assets/fonts/GTWalsheimPro-UltraBold.ttf');
 }
 
 @font-face {
   font-family: 'Quicksand';
-  src: url('/Quicksand-Light.woff2') format('woff2'),
-    url('/Quicksand-Light.woff') format('woff');
+  src: url('/assets/fonts/Quicksand-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Poppins';
-  src: url('/assets/fonts/Poppins-Regular.ttf');
+  font-family: 'PoppinsLight';
+  src: url('/assets/fonts/Poppins-Light.ttf');
 }
 
 @font-face {
@@ -24,7 +23,7 @@
 
 
 // Font-Family
-$ff-family: "Poppins", Arial, sans-serif;
+$ff-family: "PoppinsLight", Arial, sans-serif;
 $ff-primary-header: "GtWalsheima", Helvetica, Arial, sans-serif;
 $ff-body: $ff-family;
 $ff-variant: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
@@ -48,7 +47,7 @@ $fs-700: clamp(60px, 9vw, 90px);
 $fs-small-text: $fs-100;
 $fs-nav-links: $fs-150;
 $fs-body: $fs-300;
-$fs-button: $fs-200;
+$fs-button: $fs-250;
 $fs-primary-header: $fs-700;
-$fs-secondary-header: $fs-500;
+$fs-secondary-header: $fs-600;
 $fs-subtitle: $fs-500;

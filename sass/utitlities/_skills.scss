@@ -1,5 +1,28 @@
+@use '../abstracts/' as *;
+
 .skills-section {
   padding-block: 1em;
+
+  .skills-list {
+    margin: $pad-500 auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(160px, 1fr));
+    gap: $pad-500 $pad-300;
+    place-items: center;
+
+    li {
+      h3 {
+        margin-bottom: $pad-300;
+        font-family: $ff-primary-header;
+      }
+
+      .skill {
+        @include flex-column();
+        gap: $pad-100;
+      }
+    }
+  }
 
   .nav-container {
     display: flex;
@@ -278,13 +301,24 @@
       box-shadow: 0 0 5px #4ddaf3;
     }
   }
+}
 
-  @media (max-width: 500px) {
+
+@media (max-width: 500px) {
+  .skills-section {
+
+    .skills-list {
+      margin: $pad-500 $pad-100;
+      width: 100%;
+      justify-content: start;
+    }
+
     .nav-container {
       height: 300px;
       width: 100%;
       margin: 4em auto 2em;
     }
+
 
     .nav-container .nav {
       height: 220px;

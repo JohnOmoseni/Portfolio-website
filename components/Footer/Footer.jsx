@@ -6,7 +6,7 @@ import SocialLinks from "../SocialLinks";
 const animateArrow = {
   animate: {
     y: [-3, 3],
-    transition: { duration: 0.5, repeat: Infinity, repeatType: "reverse" },
+    transition: { duration: 0.5, type: "spring", repeat: Infinity, repeatType: "reverse" },
   },
 };
 

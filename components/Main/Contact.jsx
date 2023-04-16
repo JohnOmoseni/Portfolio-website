@@ -7,6 +7,7 @@ import emailjs from "@emailjs/browser";
 
 import Heading from "./Heading";
 import ContactImg from "public/assets/images/img7.png";
+import { ContactInfo } from "./ContactInfo";
 
 const containerVariant = {
   hidden: { opacity: 0, y: 100 },
@@ -63,10 +64,12 @@ function Contact() {
     >
       <Heading name="contact" number="06. What's Next?" title="Get In Touch" disabled />
       <p className="subtitle">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus asperiores eos
-        laboriosam dignissimos rem quis nihil quibusdam velit officiis nesciunt ipsa molestiae,
-        laborum nostrum sint ex quisquam quo atque. Obcaecati.
+        I'm currently open to joining a new team of creative developers and I'm committed to
+        delivering high quality work that meets your needs and exceeds your expectations. Also if
+        you have a question, proposal, idea or you just want to say hi, Go ahead ☺
       </p>
+      <ContactInfo />
+
       <div className="content">
         <div className="img-container">
           <Image src={ContactImg} alt="" placeholder="blur" />
@@ -115,6 +118,7 @@ function Contact() {
           </button>
         </form>
       </div>
+      <h3>Can't wait to hear from you</h3>
     </motion.section>
   );
 }

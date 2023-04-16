@@ -19,14 +19,12 @@ function AboutBody({ variant }) {
       <div className="tools">
         <p>Here are a few technologies I&lsquo;ve been working with recently:</p>
 
-        <div className="skills">
-          <Skills title="JavaScript(ES6+)" />
-          <Skills title="React" />
-          <Skills title="Next.js" />
-          <Skills title="Node.js" />
-          <Skills title="SASS" />
-          <Skills title="Express" />
-        </div>
+        <ul className="skills">
+          <Skills title="Typescript" />
+          <Skills title="Three.js" />
+          <Skills title="Ether.js" />
+          <Skills title="Solidity" />
+        </ul>
       </div>
     </div>
   );

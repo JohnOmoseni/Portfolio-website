@@ -1,4 +1,5 @@
 import Heading from "./Heading";
+import Skills from "./Skills";
 import { motion } from "framer-motion";
 
 import CSS3 from "../Svgs/Css3";
@@ -20,6 +21,12 @@ const containerVariant = {
     transition: { ease: "easeIn", duration: 1.2, staggerChildren: 0.3 },
   },
 };
+const skillsArray = [
+  { heading: "Languages", skills: ["Javascript (ES6)", "TypeScript", "HTML", "CSS/SASS"] },
+  { heading: "Tools", skills: ["Bash", "Git & Github", "Chrome DevTools", "MongoDB"] },
+  { heading: "Frameworks", skills: ["React/NEXT", "Node", "Ecpress", "Wordpress"] },
+  { heading: "Design", skills: ["Sketch", "Figma", "User Testing"] },
+];
 
 function Services() {
   return (
@@ -32,7 +39,11 @@ function Services() {
       viewport={{ once: true, amount: 0.2 }}
     >
       <Heading name="skills" number="03." title="My Superpowers" />
-
+      <ul className="skills-list">
+        {skillsArray.map((skill, idx) => {
+          return <Skills {...skill} key={idx} />;
+        })}
+      </ul>
       <div className="nav-container">
         <div className="nav">
           <Html5 />

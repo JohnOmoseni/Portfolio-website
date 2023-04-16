@@ -1,10 +1,15 @@
-import React from "react";
+import { AiOutlineWhatsApp } from "react-icons/ai";
 
 function SocialLinks() {
   return (
     <ul className="social-links">
       <li>
-        <a href="https://github.com/bchiang7" aria-label="GitHub" target="_blank" rel="noreferrer">
+        <a
+          href="https://github.com/johnOmoseni"
+          aria-label="GitHub"
+          target="_blank"
+          rel="noreferrer"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             role="img"
@@ -23,7 +28,7 @@ function SocialLinks() {
       </li>
       <li>
         <a
-          href="https://www.instagram.com/bchiang7"
+          href="https://www.instagram.com/0jay82"
           aria-label="Instagram"
           target="_blank"
           rel="noreferrer"
@@ -48,7 +53,7 @@ function SocialLinks() {
       </li>
       <li>
         <a
-          href="https://twitter.com/bchiang7"
+          href="https://twitter.com/JohnOmoseni"
           aria-label="Twitter"
           target="_blank"
           rel="noreferrer"
@@ -71,7 +76,7 @@ function SocialLinks() {
       </li>
       <li>
         <a
-          href="https://www.linkedin.com/in/bchiang7"
+          href="https://www.linkedin.com/in/johnny-omoseni-4b489225a"
           aria-label="Linkedin"
           target="_blank"
           rel="noreferrer"
@@ -92,6 +97,17 @@ function SocialLinks() {
             <rect x="2" y="9" width="4" height="12"></rect>
             <circle cx="4" cy="4" r="2"></circle>
           </svg>
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://wa.me/+2349012603169"
+          aria-label="Whatsapp"
+          target="_blank"
+          rel="noreferrer"
+          title="Whatsapp"
+        >
+          <AiOutlineWhatsApp />
         </a>
       </li>
     </ul>

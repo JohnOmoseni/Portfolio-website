@@ -16,11 +16,12 @@
       .project-thumbnail {
         margin: $pad-400 0 $pad-300;
         display: block;
+        height: 200px;
         border-radius: $br-light;
-        height: 260px;
-        box-shadow: 2px 2px 15px 5px rgba(black, 0.4);
-        filter: grayscale(80%) contrast(1) brightness(90%);
         transition: $transition;
+        box-shadow: 0px 3px 5px rgba(black, 0.3);
+        filter: grayscale(60%) contrast(1) brightness(80%);
+
 
         &:hover {
           filter: none;
@@ -56,7 +57,9 @@
       }
 
       .project-title {
-        width: max-content;
+        width: 100%;
+        text-overflow: ellipsis;
+        overflow: hidden;
         margin-bottom: $pad-100 ;
         transition: $transition;
 
@@ -74,6 +77,7 @@
 
       .summary {
         margin-block: $pad-500 $pad-600;
+        letter-spacing: 1px;
       }
 
       .tech-tools {

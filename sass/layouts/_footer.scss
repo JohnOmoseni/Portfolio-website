@@ -4,6 +4,7 @@ footer {
   @include flex-column();
   gap: $pad-200;
   align-items: center;
+  background: var(--bg-body);
   padding: $pad-400 $pad-300;
   letter-spacing: $ls-100;
   position: relative;
@@ -67,6 +68,8 @@ footer {
 @mixin footer-laptop {
   footer {
     gap: $pad-100;
+    width: 80%;
+    margin: auto;
 
     .scroll-to-top {
       margin: $pad-200 auto;

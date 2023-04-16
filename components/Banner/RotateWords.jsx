@@ -6,13 +6,28 @@ function RotateWords() {
   const [currText, setCurrText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const period = 4000;
+  const [isTimeout, setIsTimeout] = useState(true);
 
-  const wordsToRotate = ["Frontend Developer", "UI/UX Designer", "NextJS Enthusiast"];
+  const wordsToRotate = [
+    "Frontend Developer",
+    "UI/UX Designer",
+    "NextJS Enthusiast",
+    "Man-United Fan",
+  ];
 
   useEffect(() => {
-    const ticker = setInterval(tick, delta);
-
-    return () => clearInterval(ticker);
+    // ojaaay's masterpiece
+    let ticker;
+    if (isTimeout) {
+      ticker = setTimeout(() => {
+        tick();
+      }, 12000);
+      setIsTimeout(false);
+      return () => clearTimeout(ticker);
+    } else {
+      ticker = setInterval(tick, delta);
+      return () => clearInterval(ticker);
+    }
   }, [currText]);
 
   const tick = () => {

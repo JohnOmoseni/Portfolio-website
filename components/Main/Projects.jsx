@@ -10,7 +10,7 @@ const containerVariant = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 1.5, ease: "easeIn" },
+    transition: { duration: 0.5, type: "spring", when: "beforeChildren" },
   },
 };
 
@@ -28,12 +28,13 @@ function Projects() {
       id="projects"
       variants={containerVariant}
       initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.2 }}
+      animate="visible"
     >
       <Heading name="projects" number="04." title="Some Things I've Built" />
       <div className="card-container">
-        {projects && projects.map((project, idx) => <Card key={idx} {...project} />)}
+        {projects.map((project, idx) => (
+          <Card key={idx} {...project} />
+        ))}
       </div>
 
       <div className="view-more">

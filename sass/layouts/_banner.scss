@@ -10,7 +10,7 @@
   min-height: 100vh;
   background-blend-mode: darken;
 
-  padding: 20vh $pad-200 $pad-200;
+  padding: 18vh $pad-200 $pad-200;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -19,11 +19,12 @@
   flex-direction: column;
   align-items: center;
   gap: 1em;
+  transition: $transition;
 
   &::before {
     content: '';
     position: absolute;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.4) 15%, transparent) !important;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0) 15%, transparent) !important;
     inset: 0;
     z-index: -1;
   }
@@ -40,7 +41,6 @@
       font-size: $fs-250;
       line-height: 1.2;
       letter-spacing: $ls-100;
-      color: var(--text-clr-variant);
       color: var(--clr-variant);
       text-align: center;
     }
@@ -48,7 +48,7 @@
     .banner-title {
       @include flex-column();
       align-items: center;
-      gap: 0;
+      gap: 0.7rem;
     }
 
     .flex-container {
@@ -70,9 +70,9 @@
     }
 
     .changing-words {
-      --clr-variant: hsla(0, 0%, 54%, 0.6);
+      --clr-variant: hsl(169, 70%, 40%);
 
-      padding: 0.2em 0 0;
+      padding: 0.3em 0 0;
       min-height: 50px;
       color: var(--clr-variant);
       line-height: 1.2;
@@ -80,12 +80,12 @@
       font-family: $ff-variant;
       text-shadow: $ts-200;
       text-align: center;
-      -webkit-text-stroke: var(--clr-variant) 1px;
+      -webkit-text-stroke: hsla(0, 0%, 64%, 0.376) 1px;
     }
 
 
     p.text {
-      margin: $pad-300 auto;
+      margin: $pad-600 auto $pad-500;
       word-spacing: 2px;
       font-weight: bold;
       color: var(--text-grey-200);
@@ -102,8 +102,9 @@
   }
 
   .column-2 {
-    width: 380px;
-    height: 380px;
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
     pointer-events: none;
   }
 }
@@ -137,7 +138,7 @@
         text-align: center;
 
         h1 {
-          line-height: 0.9
+          line-height: 1
         }
 
         &.offset {
@@ -165,7 +166,7 @@
       top: -5%;
       justify-self: center;
       padding-inline: 1em;
-      width: 550px;
+      max-width: 550px;
       height: 550px;
     }
   }

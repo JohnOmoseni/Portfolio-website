@@ -1,10 +1,10 @@
 @use "../abstracts/index" as *;
 
 body {
-  // @include bg-image(url("/public/images/pexel1.669439dcbd6638db8b3b.jpg"));
-  background-color: #181818;
+  background-color: var(--bg-body);
   width: 100%;
   min-height: 100vh;
+  color: var(--text-clr-main);
   overflow: hidden auto;
 }
 
@@ -85,12 +85,16 @@ body {
   overflow: hidden;
 }
 
+.wrapper::selection {
+  background: #026a52;
+}
+
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 7px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #191919;
+  background-color: #333;
   border: 1px solid #222;
   border-radius: 12px;
 }

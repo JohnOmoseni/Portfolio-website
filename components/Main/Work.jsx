@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import Heading from "./Heading";
 import Tabs from "./Tabs";
 import TabsPanel from "./TabsPanel";
+import Image from "next/image";
+import img from "@assets/images/cta-shape.png";
 
 const containerVariant = {
   hidden: { opacity: 0, y: 100 },
@@ -64,6 +66,8 @@ function Work() {
           <TabsPanel activeTab={activeTab} id="tab-2" idx="2" />
         </div>
       </div>
+
+      <Image src={img} alt="" className="layout-img" />
     </motion.section>
   );
 }

@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import me from "@assets/images/people-01.png";
@@ -8,7 +7,7 @@ const imgVariant = {
   visible: {
     opacity: 1,
     scale: 1,
-    transition: { duration: 1 },
+    transition: { duration: 1, delay: 0.6 },
   },
 };
 

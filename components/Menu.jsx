@@ -11,20 +11,21 @@ const animateMenu = {
     opacity: 1,
     x: 0,
     transition: {
-      delay: 0.3,
+      delay: 0.2,
       duration: 0.8,
       type: "spring",
       mass: 0.3,
+      ease: "easeIn",
       when: "beforeChildren",
       delayChildren: 0.2,
-      staggerChildren: 0.6,
+      staggerChildren: 0.4,
     },
   },
   exit: {
     x: "100vw",
     opacity: 0,
     transition: {
-      duration: 5.5,
+      duration: 1,
       ease: "easeOut",
     },
   },
@@ -32,16 +33,16 @@ const animateMenu = {
 
 function Menu({ setOpenMenu }) {
   return (
-    <div className="menu-backdrop" onClick={() => setOpenMenu(false)}>
-      <AnimatePresence>
-        <motion.div
-          className="menu-block"
-          variants={animateMenu}
-          initial="hidden"
-          animate="visible"
-          exit="exit"
-          onClick={e => e.stopPropagation()}
-        >
+    <AnimatePresence>
+      <motion.div
+        className="menu-backdrop"
+        variants={animateMenu}
+        initial="hidden"
+        animate="visible"
+        exit="exit"
+        onClick={() => setOpenMenu(false)}
+      >
+        <motion.div className="menu-block" onClick={e => e.stopPropagation()}>
           <span className="close-menu" onClick={() => setOpenMenu(false)} title="close-menu">
             <CgClose size="30" />
           </span>
@@ -65,8 +66,8 @@ function Menu({ setOpenMenu }) {
           </div>
           <SocialLinks />
         </motion.div>
-      </AnimatePresence>
-    </div>
+      </motion.div>
+    </AnimatePresence>
   );
 }
 

@@ -1,6 +1,16 @@
 import { galleryImages } from "../../constants";
+import { motion } from "framer-motion";
 import Heading from "./Heading";
 import Image from "next/image";
+
+const containerVariant = {
+  hidden: { y: 100, opacity: 0 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 1.5, ease: "easeIn" },
+  },
+};
 
 const ImgBox = ({ src, getImgsrc }) => {
   return (
@@ -34,7 +44,13 @@ function Gallery({ setOpenModal }) {
   };
 
   return (
-    <section className="gallery-container">
+    <motion.section
+      className="gallery-container"
+      variants={containerVariant}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+    >
       <Heading name="gallery" title="Gallery" disabled />
       <p className="subtitle">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, unde.
@@ -45,7 +61,7 @@ function Gallery({ setOpenModal }) {
           return <GalleryColumn gallery={gallery} idx={idx} key={idx} getImgsrc={getImgsrc} />;
         })}
       </div>
-    </section>
+    </motion.section>
   );
 }
 

@@ -18,6 +18,9 @@
         @include flex-row($justify: flex-start);
         gap: $pad-100;
 
+        .icon {
+          margin-top: 2px
+        }
       }
     }
   }
@@ -49,12 +52,12 @@
   .about {
     .content {
       display: grid;
-      grid-template-columns: 2fr 1fr;
+      grid-template-columns: 1fr 1fr;
       gap: $pad-500;
 
       .img-container {
-        width: 300px;
-        height: 300px;
+        width: 350px;
+        height: 350px;
         align-self: center;
         justify-self: center;
         margin: 0;

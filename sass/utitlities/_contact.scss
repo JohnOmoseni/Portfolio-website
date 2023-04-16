@@ -19,6 +19,27 @@
     text-align: center;
     max-width: 50ch;
     margin: auto;
+    letter-spacing: $ls-100;
+  }
+
+  h3 {
+    text-align: center;
+    font-family: $ff-primary-header;
+    padding: $pad-300 0;
+  }
+
+  .contact-info {
+    @include flex-column();
+    margin: $pad-400 auto;
+    width: max-content;
+    align-items: center;
+    gap: $pad-100;
+
+    .info {
+      @include flex-row();
+      gap: $pad-200;
+
+    }
   }
 
   .content {
@@ -109,6 +130,10 @@
 
     .subtitle {
       max-width: 70%;
+    }
+
+    .contact-info {
+      padding-left: 3%;
     }
 
     .content {

@@ -1,13 +1,15 @@
 import bgImg1 from "@assets/images/bgImg1.png";
 import bgImg2 from "@assets/images/bgImg2.jpg";
 import bgImg3 from "@assets/images/bgImg3.jpg";
-import bgImg4 from "@assets/images/bgImg4.jpg";
-import bgImg5 from "@assets/images/bgImg5.jpeg";
+import bgImg4 from "@assets/images/bgImg4.jpeg";
 
 import project1 from "@assets/images/bgImg1.png";
-import project2 from "@assets/images/bgImg2.jpg";
-import project3 from "@assets/images/bgImg3.jpg";
-import project4 from "@assets/images/bgImg4.jpg";
+import project2 from "@assets/images/loyalblaze-bg.png";
+import project3 from "@assets/images/gamersmart-bg.png";
+import project4 from "@assets/images/weatherapp-bg.png";
+import project5 from "@assets/images/debitty-card.jpg";
+import project6 from "@assets/images/fontpalette-bg.png";
+import project7 from "@assets/images/letsview-dark.png";
 
 import gallery1 from "@assets/images/gallery-1.jpg";
 import gallery2 from "@assets/images/gallery-2.webp";
@@ -54,7 +56,6 @@ export const bgImages = [
   { imgSrc: bgImg2 },
   { imgSrc: bgImg3 },
   { imgSrc: bgImg4 },
-  { imgSrc: bgImg5 },
 ];
 
 // Gallery
@@ -122,25 +123,59 @@ export const projects = [
   {
     title: "Halycon Theme",
     imgSrc: project1,
+    website: "https://",
+    github: "https://",
     body: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem isteperspiciatis, dolor culpa eius animi? Lorem ipsum dolor sit amet consectetur adipisicingelit. Sed aperiam perspiciatis tempore reprehenderit expedita quis possimus placeat liberofacilis animi",
     tools: ["React", "Sublime", "Expresss", "Sass", "TailWindCss"],
   },
   {
-    title: "Halycon Theme",
+    title: "Loyal Blaze",
     imgSrc: project2,
+    website: "https://loyalblaze-johnny.netlify.app",
+    github: "https://github.com/JohnOmoseni/loyal-blaze-design",
     body: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem isteperspiciatis, dolor culpa eius animi? Lorem ipsum dolor sit amet consectetur adipisicingelit. Sed aperiam perspiciatis tempore reprehenderit expedita quis possimus placeat liberofacilis animi",
-    tools: ["React", "Sublime", "Expresss", "Sass", "TailWindCss"],
+    tools: ["HTML", "CSS", "Javascript", "Figma"],
   },
   {
-    title: "Halycon Theme",
+    title: "Gamers Mart",
     imgSrc: project3,
+    website: "https://gamify-mart.vercel.app",
+    github: "https://github.com/JohnOmoseni/Gamers-mart",
     body: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem isteperspiciatis, dolor culpa eius animi? Lorem ipsum dolor sit amet consectetur adipisicingelit. Sed aperiam perspiciatis tempore reprehenderit expedita quis possimus placeat liberofacilis animi",
-    tools: ["React", "Sublime", "Expresss", "Sass", "TailWindCss"],
+    tools: ["React", "Redux", "Framer-motion", "Sass", "SwiperJS"],
   },
   {
-    title: "Halycon Theme",
+    title: "Weather App",
     imgSrc: project4,
+    website: "https://weatherapp-johnny-dev.vercel.app",
+    github: "https://github.com/JohnOmoseni/the-weather-app",
+    body: "An interesting modern weatherb app that brings you accurate and up-to-date weather infromation righht to your fingertips! With its user-friendly interface and stunning design, this weather webapp is perfect for anyone looking to stay on top of changing weather patterns",
+    tools: ["React", "WeatherAPI", "Sass", "Git", "Vercel"],
+  },
+  {
+    title: "Glossy Credit Card Design",
+    imgSrc: project5,
+    website: "https://debittycard.netlify.app",
+    github: "https://github.com/JohnOmoseni/glossy-credit-card-design",
+    body: "A glossy credit card design implementation with keyboard navigation that allows users to move to the next input field whilst entering your card number. This credit card form design featues a sleek, glossy design that is both visually appealing and user-friendly.",
+    tools: ["HTML", "CSS", "Javascript", "Netlify"],
+  },
+  {
+    title: "Fontsipsums",
+    imgSrc: project6,
+    website: "https://fontpalette-johnny-dev.vercel.app/",
+    github: "https://github.com/JohnOmoseni/fontsipsums",
+    body: "As someone who has an eye for pretty letters, I wanted a way to visually see different font combinations together. I whipped up this simple website to display some of my favourite pairings combined with some fun lorem ipsum variations I found on the web. This project lets you explore different font pairings to your heart's content😉",
+    tools: ["HTML", "CSS", "Vercel"],
+  },
+  {
+    title: "LetsView",
+    imgSrc: project7,
+    website: "https://letsview.netlify.app/",
+    github: "https://github.com/JohnOmoseni/letsview",
     body: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem isteperspiciatis, dolor culpa eius animi? Lorem ipsum dolor sit amet consectetur adipisicingelit. Sed aperiam perspiciatis tempore reprehenderit expedita quis possimus placeat liberofacilis animi",
-    tools: ["React", "Sublime", "Expresss", "Sass", "TailWindCss"],
+    tools: ["HTML", "CSS", "Javascript", "Vscode", "Netlify"],
   },
 ];
+
+// An ecommerce game store where you can indulge in your passion for gaming and take your gaming experience to the next FaLevelDownAlt. This website is designed to cater to all your gaming normalizeRepeatedSlashes, providing you with an extensive collection of games, from popular titles to new releases

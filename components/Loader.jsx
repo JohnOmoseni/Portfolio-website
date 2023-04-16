@@ -53,7 +53,7 @@ const Loader = ({ setLoading }) => {
       // onAnimationComplete={() => setLoading(false)}
     >
       <motion.div className="loader-inner" variants={itemMain}>
-        <BallSpinner size={40} className="loader-icon" />
+        {/* <BallSpinner size={40} className="loader-icon" /> */}
         <span className="loader-text">Loading...</span>
       </motion.div>
     </motion.div>

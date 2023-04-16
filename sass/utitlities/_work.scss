@@ -4,9 +4,10 @@
 .jobs {
   --tab-clr: #64ffda;
 
-  position: relative;
   width: min(100%, 800px);
   margin: auto;
+  position: relative;
+  isolation: isolate;
 
   .jobs-content {
     margin: 3em $pad-200 $pad-200;
@@ -81,6 +82,15 @@
         }
       }
     }
+  }
+
+  .layout-img {
+    position: absolute;
+    bottom: -2em;
+    right: -5em;
+    z-index: -1;
+    width: 200px;
+    height: 200px;
   }
 }
 

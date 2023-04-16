@@ -1,13 +1,22 @@
 import { IoMdCheckboxOutline } from "react-icons/io";
 
-function Skills({ title }) {
+function Skills({ title, heading, skills }) {
   return (
-    <div className="skill">
-      <span className="icon">
-        <IoMdCheckboxOutline size="16" fill="#01876579" />
-      </span>
-      <span className="title">{title}</span>
-    </div>
+    <li>
+      {skills && <h3 className="head">{heading}</h3>}
+
+      <div className="skill">
+        {!skills && (
+          <>
+            <span className="icon">
+              <IoMdCheckboxOutline size="16" fill="#01876579" />
+            </span>
+            <span className="title">{title}</span>
+          </>
+        )}
+        {skills && skills.map((skill, idx) => <span key={idx}>{skill} </span>)}
+      </div>
+    </li>
   );
 }
 

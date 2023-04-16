@@ -3,19 +3,24 @@
 %banner-btn {
   @include button-reset();
 
-  padding: $pad-200 2em;
+  width: min-content;
   text-transform: uppercase;
-  border-radius: $br-light;
-  background-color: transparent;
-  text-shadow: $ts-100;
-  font-size: $fs-button;
-  box-shadow: 2px 2px 10px rgba(black, 0.6),
-    inset 3px 3px 10px rgba(#00545d, 0.2),
-    inset -5px -5px 10px rgba(black, 0.6),
-  ;
+  padding: $pad-200 $pad-500;
+  letter-spacing: $ls-100;
+  color: var(--text-white);
+  background: rgba(#06a680, 0.3);
   border-radius: $br-btn;
-  overflow: hidden;
 
+  font-size: $fs-400;
+  font-weight: $fw-bold;
+  box-shadow: 2px 2px 10px rgba(black, 0.4),
+    inset 3px 3px 4px rgba(#06a680, 0.3),
+    inset -3px -3px 4px rgba(black, 0.5),
+  ;
+  overflow: hidden;
+  transform: translateY(0px);
+  transition: $transition;
+  margin: auto;
   position: relative;
   cursor: pointer;
 
@@ -24,17 +29,22 @@
     position: absolute;
     inset: 0;
     width: 0;
+    background: rgba(#055844, 0.6);
     transition: width $transition;
     z-index: -1;
   }
 
   &:hover {
-    border: none;
+    color: var(--text-white);
+    scale: 0.94;
+    outline: 2px #06a68170 solid;
+    outline-offset: 1px;
+
+    &::before {
+      width: 100%;
+    }
   }
 
-  &:hover::before {
-    width: 100%;
-  }
 }
 
 %form-btn {
