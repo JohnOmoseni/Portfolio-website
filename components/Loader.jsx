@@ -42,7 +42,7 @@ const Loader = ({ setLoading }) => {
     return () => {
       clearTimeout(timer);
     };
-  }, []);
+  }, [setLoading]);
   return (
     <motion.div
       className="loader"
