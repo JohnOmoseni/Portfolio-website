@@ -6,11 +6,11 @@ import Column1 from "./Column1";
 
 function Banner() {
   const [currImg, setCurrImg] = useState(0);
-  let i = 0;
 
   useEffect(() => {
+    let i = 0;
     const changeBg = () => {
-      if (i === bgImages.length - 1) {
+      if (i >= bgImages.length - 1) {
         i = 0;
         setCurrImg(i);
       } else {

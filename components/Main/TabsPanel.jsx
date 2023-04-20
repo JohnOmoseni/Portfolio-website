@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { jobs } from "../../constants";
 
@@ -33,15 +32,15 @@ function TabsPanel({ activeTab, id, idx }) {
           aria-hidden={activeTab === id ? "false" : "true"}
           className={activeTab === id ? "tab-panel active" : "tab-panel"}
         >
-          <h3>
-            <span className="jobtitle">{jobTitle}</span>
-            <span className={`company company-${idx}`}>
-              &nbsp;@&nbsp;
-              <a href={link} className="inline-link" rel="noopener noreferrer" target="_blank">
-                {company}
-              </a>
-            </span>
-          </h3>
+          <a href={link} rel="noopener noreferrer" className="jobtitle" target="_blank">
+            <span className="title">{jobTitle}</span>
+            {company && (
+              <span className={`company company-${idx}`}>
+                &nbsp;@&nbsp;
+                <span>{company}</span>
+              </span>
+            )}
+          </a>
           <p className="years">{year}</p>
           <ul className="description">
             {description.map((item, idx) => (

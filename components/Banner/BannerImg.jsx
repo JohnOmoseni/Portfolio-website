@@ -7,7 +7,7 @@ const bannerImgVariant = {
   animate: {
     opacity: 1,
     scale: 1,
-    transition: { type: "tween", duration: 1, delay: 4 },
+    transition: { type: "tween", duration: 1, delay: 6 },
   },
 };
 
@@ -18,8 +18,9 @@ export const BannerImg = () => {
       initial="hidden"
       animate="animate"
       className="column column-2"
+      title="Family is everything to me"
     >
-      <Image src={bannerImg} alt="" priority title="Family is everything to me" />
+      <Image src={bannerImg} alt="" priority />
     </motion.div>
   );
 };

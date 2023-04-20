@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { motion } from "framer-motion";
 
-import { BallSpinner } from "react-spinners-kit";
+import { SwapSpinner } from "react-spinners-kit";
 
 const container = {
   show: {
@@ -14,7 +14,7 @@ const container = {
   },
   exit: {
     opacity: 0,
-    y: -200,
+    x: -200,
     transition: {
       ease: "easeInOut",
       duration: 0.8,
@@ -23,10 +23,9 @@ const container = {
 };
 
 const itemMain = {
-  hidden: { opacity: 0, y: 200 },
+  hidden: { opacity: 0 },
   show: {
     opacity: 1,
-    y: 0,
     transition: {
       ease: "easeIn",
       duration: 3,
@@ -38,7 +37,7 @@ const Loader = ({ setLoading }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 5000);
+    }, 7000);
     return () => {
       clearTimeout(timer);
     };
@@ -53,19 +52,10 @@ const Loader = ({ setLoading }) => {
       // onAnimationComplete={() => setLoading(false)}
     >
       <motion.div className="loader-inner" variants={itemMain}>
-        {/* <BallSpinner size={40} className="loader-icon" /> */}
+        <SwapSpinner size={50} className="loader-icon" color="#06a680" />
         <span className="loader-text">Loading...</span>
       </motion.div>
     </motion.div>
-  );
-};
-
-const Image = ({ src, fallback, type = "image/webp", alt }) => {
-  return (
-    <picture>
-      <source srcSet={src} type={type} />
-      <img src={fallback} alt={alt} />
-    </picture>
   );
 };
 

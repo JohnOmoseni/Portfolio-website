@@ -17,6 +17,12 @@
     text-align: center;
   }
 
+  .subtitle {
+    width: 95%;
+    max-width: 95ch;
+    margin: 0 auto;
+  }
+
   &::after {
     @include pseudo();
     bottom: -50px;

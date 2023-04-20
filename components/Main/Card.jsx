@@ -13,7 +13,7 @@ const cardVariant = {
   },
 };
 
-function Card({ title, imgSrc, body, tools, website, github }) {
+function Card({ heading, title, imgSrc, body, tools, website, github }) {
   return (
     <motion.div
       className="card"
@@ -23,7 +23,7 @@ function Card({ title, imgSrc, body, tools, website, github }) {
     >
       <div className="card-content">
         <div className="top">
-          <span className="featured">Featured Project</span>
+          <span className="featured">{heading}</span>
           <span className="links">
             <a
               href={github}

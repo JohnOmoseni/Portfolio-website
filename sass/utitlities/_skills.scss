@@ -110,7 +110,7 @@
     --i: 5
   }
 
-  .nav-container .nav span.vue {
+  .nav-container .nav span.typescript {
     --i: 6
   }
 
@@ -310,7 +310,8 @@
     .skills-list {
       margin: $pad-500 $pad-100;
       width: 100%;
-      justify-content: start;
+      place-items: center start;
+
     }
 
     .nav-container {

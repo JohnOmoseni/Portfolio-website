@@ -39,10 +39,11 @@ function Projects() {
 
       <div className="view-more">
         <a
-          href="https://github.com/JohnOmoseni"
+          href="https://github.com/johnOmoseni"
           aria-label="External Link"
           target="_blank"
           rel="noreferrer noopener"
+          title="Github"
         >
           View More on my Github
           <motion.span variants={animateArrow} animate="animate">

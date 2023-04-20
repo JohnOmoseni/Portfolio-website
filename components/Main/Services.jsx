@@ -1,13 +1,13 @@
+import { motion } from "framer-motion";
 import Heading from "./Heading";
 import Skills from "./Skills";
-import { motion } from "framer-motion";
 
 import CSS3 from "../Svgs/Css3";
 import Html5 from "../Svgs/Html5";
 import Sass from "../Svgs/Sass";
 import Node from "../Svgs/Node";
 import MongoDB from "../Svgs/Mongodb";
-import Vue from "../Svgs/Vue";
+import Typescript from "../Svgs/Typescript";
 import Js from "../Svgs/JS";
 import NextJS from "../Svgs/Nextjs";
 import Git from "../Svgs/Git";
@@ -23,9 +23,9 @@ const containerVariant = {
 };
 const skillsArray = [
   { heading: "Languages", skills: ["Javascript (ES6)", "TypeScript", "HTML", "CSS/SASS"] },
-  { heading: "Tools", skills: ["Bash", "Git & Github", "Chrome DevTools", "MongoDB"] },
-  { heading: "Frameworks", skills: ["React/NEXT", "Node", "Ecpress", "Wordpress"] },
-  { heading: "Design", skills: ["Sketch", "Figma", "User Testing"] },
+  { heading: "Tools", skills: ["Bash", "Git & Github", "Codekit", "Chrome DevTools", "MongoDB"] },
+  { heading: "Frameworks", skills: ["NEXT", "Node", "Ecpress", "Wordpress"] },
+  { heading: "Design", skills: ["Sketch", "Figma", "Font Awesome", "User Testing"] },
 ];
 
 function Services() {
@@ -51,7 +51,7 @@ function Services() {
           <Js />
           <Sass />
           <NextJS />
-          <Vue />
+          <Typescript />
           <Git />
           <Node />
           <MongoDB />

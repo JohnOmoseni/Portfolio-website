@@ -1,11 +1,15 @@
 @use '../abstracts/' as *;
 
 .about {
+  position: relative;
+  padding-block: 4em 3em;
+
   .about-body {
     margin-bottom: $pad-300;
 
     >* {
       padding-block: $pad-200;
+      letter-spacing: 2px;
     }
 
     .skills {
@@ -26,22 +30,26 @@
   }
 
   .img-container {
-    width: 280px;
-    height: 280px;
+    width: 320px;
+    height: 320px;
     margin: $pad-600 auto $pad-400;
     border-radius: $br-round;
     padding: $pad-200;
     transition: $transition;
     overflow: hidden;
-    box-shadow: 2px 3px 8px rgba(black, 0.5),
-      0px -1px 3px rgba(white, 0.2);
-    filter: grayscale(60%) contrast(1) brightness(60%);
+    box-shadow: 2px 3px 8px rgba(black, 0.7),
+      0px -2px 3px rgba(white, 0.3);
+    filter: contrast(1) brightness(40%) saturate(3);
+
+    img {
+
+      transition: $transition-200;
+    }
 
     &:hover {
-      filter: none;
+      filter: saturate(2) brightness(70%);
 
       img {
-        transition: $transition;
         scale: 1.08;
       }
     }

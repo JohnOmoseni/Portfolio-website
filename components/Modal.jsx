@@ -40,10 +40,10 @@ function Modal({ setOpenModal, imgSrc }) {
       onClick={() => closeModal()}
     >
       <span className="close-modal" onClick={() => closeModal()} title="close-menu">
-        <CgClose size="30" />
+        <CgClose size="30" fill="#ddd" />
       </span>
       <div className="modal-img-box modal" onClick={e => e.stopPropagation()}>
-        <Image src={imgSrc} alt="" />
+        <img src={imgSrc} alt="" />
       </div>
     </motion.div>
   );

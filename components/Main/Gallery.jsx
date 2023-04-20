@@ -36,8 +36,6 @@ const GalleryColumn = ({ gallery, idx, getImgsrc }) => {
 
 function Gallery({ setOpenModal }) {
   const getImgsrc = src => {
-    console.log(src);
-
     setOpenModal(prev => {
       return { ...prev, open: true, msg: null, imgSrc: src };
     });
@@ -53,7 +51,10 @@ function Gallery({ setOpenModal }) {
     >
       <Heading name="gallery" title="Gallery" disabled />
       <p className="subtitle">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, unde.
+        As a lover of aesthetic and beauty, this section showcases a collection of stunning art and
+        captivating photographs that have been curated to inspire and evoke emotion. I believe that
+        art has the power to transform a space, elevate our mood and transport us to another world.
+        Each piece has been chosen for its unique ability to capture the essence of its subject.
       </p>
 
       <div className="gallery-content">

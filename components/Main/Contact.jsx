@@ -64,9 +64,10 @@ function Contact() {
     >
       <Heading name="contact" number="06. What's Next?" title="Get In Touch" disabled />
       <p className="subtitle">
-        I'm currently open to joining a new team of creative developers and I'm committed to
-        delivering high quality work that meets your needs and exceeds your expectations. Also if
-        you have a question, proposal, idea or you just want to say hi, Go ahead &#128516;
+        I'm currently open to joining a new or exisiting team of creative developers and I'm
+        committed to delivering high quality work that meets your needs and exceeds your
+        expectations. Also if you have a question, proposal, idea or you just want to say hi, Go
+        ahead &#128516;
       </p>
       <ContactInfo />
 
@@ -118,7 +119,7 @@ function Contact() {
           </button>
         </form>
       </div>
-      <h3>Can't wait to hear from you &#127867;</h3>
+      <h3>Can't wait to hear from you! Let's start a conversation &#127867; &#128175;</h3>
     </motion.section>
   );
 }

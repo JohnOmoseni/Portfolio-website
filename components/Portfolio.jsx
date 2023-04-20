@@ -10,10 +10,14 @@ import Footer from "./Footer/Footer";
 
 import Menu from "./Menu";
 import Loader from "./Loader";
+import Modal from "./Modal";
+
 import SocialLinks from "./SocialLinks";
 
 function Portfolio() {
   const [openMenu, setOpenMenu] = useState(false);
+  const [openModal, setOpenModal] = useState({ open: false, imgSrc: null });
+
   const [loading, setLoading] = useState(true);
 
   const headerRef = useRef(null);
@@ -41,7 +45,8 @@ function Portfolio() {
         </motion.div>
       ) : (
         <>
-          {openMenu && <Menu setOpenMenu={setOpenMenu} />}
+          <AnimatePresence>{openMenu && <Menu setOpenMenu={setOpenMenu} />}</AnimatePresence>
+
           <Sidebar orientation="left">
             <SocialLinks />
           </Sidebar>
@@ -57,7 +62,11 @@ function Portfolio() {
 
           <Header elem={headerRef} setOpenMenu={setOpenMenu} />
           <Banner />
-          <Main />
+          <Main setOpenModal={setOpenModal} />
+
+          <AnimatePresence>
+            {openModal?.open && <Modal setOpenModal={setOpenModal} imgSrc={openModal.imgSrc} />}
+          </AnimatePresence>
           <Footer />
         </>
       )}

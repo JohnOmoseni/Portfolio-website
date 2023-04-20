@@ -9,12 +9,12 @@ const animateTagLine = {
 
 const animateSubtitle = {
   hidden: { opacity: 0 },
-  animate: { opacity: 1, transition: { delay: 7.2, duration: 1.5, type: "tween", ease: "easeIn" } },
+  animate: { opacity: 1, transition: { delay: 8, duration: 1.3, type: "tween", ease: "easeIn" } },
 };
 
 const animateBtn = {
   hidden: { opacity: 0, x: "-100vw" },
-  animate: { opacity: 1, x: 0, transition: { delay: 8.6, duration: 1, type: "spring" } },
+  animate: { opacity: 1, x: 0, transition: { delay: 8.8, duration: 1, type: "spring" } },
 };
 
 const textContainer = {
@@ -24,7 +24,7 @@ const textContainer = {
     transition: {
       staggerChildren: 0.4,
       ease: "easeIn",
-      delayChildren: 1.5,
+      delayChildren: 1,
       when: "beforeChildren",
     },
   },
@@ -50,8 +50,10 @@ function Column1() {
       <RotateWords />
 
       <motion.p className="text fw-semi-bold" variants={animateSubtitle}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi fugiat aspernatur porro sequi,
-        deserunt quia voluptates voluptas harum tenetur esse placeat, reprehenderit
+        As a frontend software developer, I understand the importance of creative interfaces that
+        are intuitive and visually engaging. Whether I'm working on a new project or refining an
+        exisiting one, I always strive to create beautiful, user-friendly interfaces that delight
+        and inspire. &#129299;
       </motion.p>
 
       <motion.a href="#contact" className="banner-btn fw-semi-bold" variants={animateBtn}>

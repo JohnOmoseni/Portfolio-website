@@ -99,17 +99,6 @@ function SocialLinks() {
           </svg>
         </a>
       </li>
-      <li>
-        <a
-          href="https://wa.me/+2349012603169"
-          aria-label="Whatsapp"
-          target="_blank"
-          rel="noreferrer"
-          title="Whatsapp"
-        >
-          <AiOutlineWhatsApp />
-        </a>
-      </li>
     </ul>
   );
 }

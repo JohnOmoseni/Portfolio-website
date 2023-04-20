@@ -1,5 +1,5 @@
 import { CgClose } from "react-icons/cg";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 import { navLinks } from "../constants";
 import NavLinks from "./Header/NavLinks";
@@ -33,41 +33,39 @@ const animateMenu = {
 
 function Menu({ setOpenMenu }) {
   return (
-    <AnimatePresence>
-      <motion.div
-        className="menu-backdrop"
-        variants={animateMenu}
-        initial="hidden"
-        animate="visible"
-        exit="exit"
-        onClick={() => setOpenMenu(false)}
-      >
-        <motion.div className="menu-block" onClick={e => e.stopPropagation()}>
-          <span className="close-menu" onClick={() => setOpenMenu(false)} title="close-menu">
-            <CgClose size="30" />
-          </span>
-          <nav className="nav-links">
-            {navLinks.map((link, idx) => (
-              <NavLinks
-                key={idx}
-                {...link}
-                idx={idx}
-                enabled
-                showNumber
-                onClick={() => setOpenMenu(false)}
-              />
-            ))}
-          </nav>
-          <div className="have-an-idea">
-            <h2>Have an idea?</h2>
-            <a href="#contact" className="subtitle" onClick={() => setOpenMenu(false)}>
-              Tell me about it
-            </a>
-          </div>
-          <SocialLinks />
-        </motion.div>
-      </motion.div>
-    </AnimatePresence>
+    <motion.div
+      className="menu-backdrop"
+      variants={animateMenu}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+      onClick={() => setOpenMenu(false)}
+    >
+      <div className="menu-block" onClick={e => e.stopPropagation()}>
+        <span className="close-menu" onClick={() => setOpenMenu(false)} title="close-menu">
+          <CgClose size="30" />
+        </span>
+        <nav className="nav-links">
+          {navLinks.map((link, idx) => (
+            <NavLinks
+              key={idx}
+              {...link}
+              idx={idx}
+              enabled
+              showNumber
+              onClick={() => setOpenMenu(false)}
+            />
+          ))}
+        </nav>
+        <div className="have-an-idea">
+          <h2>Have an idea?</h2>
+          <a href="#contact" className="subtitle" onClick={() => setOpenMenu(false)}>
+            Tell me about it
+          </a>
+        </div>
+        <SocialLinks />
+      </div>
+    </motion.div>
   );
 }
 

@@ -24,7 +24,7 @@
   &::before {
     content: '';
     position: absolute;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0) 15%, transparent) !important;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 15%, transparent) !important;
     inset: 0;
     z-index: -1;
   }
@@ -54,8 +54,8 @@
     .flex-container {
       display: flex;
       gap: 1px;
-
       text-align: center;
+      user-select: none;
 
       h1 {
         color: var(--text-white);
@@ -91,7 +91,7 @@
       color: var(--text-grey-200);
       letter-spacing: $ls-100;
       text-align: center;
-      max-width: 70ch;
+      max-width: 60ch;
     }
 
     .banner-btn {
@@ -116,7 +116,7 @@
     --bottom: 5vh;
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr max-content;
     gap: $pad-200;
     padding: 20vh 7% var(--bottom);
 
@@ -166,8 +166,8 @@
       top: -5%;
       justify-self: center;
       padding-inline: 1em;
-      max-width: 550px;
-      height: 550px;
+      max-width: 600px;
+      height: 600px;
     }
   }
 }

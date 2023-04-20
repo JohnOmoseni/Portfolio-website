@@ -67,7 +67,12 @@
   position: absolute;
   top: $pad-500;
   right: $pad-300;
-  cursor: pointer
+  cursor: pointer;
+  transition: $transition;
+
+  &:hover {
+    color: #fff;
+  }
 }
 
 @mixin activeTab-indicator($width: 3px, $height: 45px) {
