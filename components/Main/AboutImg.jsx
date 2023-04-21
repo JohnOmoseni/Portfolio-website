@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
-import me from "@assets/images/johnny.jpg";
+import { aboutme } from "@assets/images/johnny.jpg";
 
 const imgVariant = {
   hidden: { opacity: 0, scale: 0.3 },
@@ -14,7 +14,7 @@ const imgVariant = {
 function AboutImage() {
   return (
     <motion.div variants={imgVariant} className="img-container">
-      <Image src={me} alt="" placeholder="blur" priority />
+      <Image src={aboutme} alt="" placeholder="blur" priority />
     </motion.div>
   );
 }
