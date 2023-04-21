@@ -25,8 +25,7 @@ function Main({ setOpenModal }) {
       <Contact />
 
       <>
-        <PlaceholderImg src={sectionImg2} />
-        <h3>Let's be internet BFFs &#127754; </h3>
+        <PlaceholderImg src={sectionImg2} text />
       </>
     </main>
   );

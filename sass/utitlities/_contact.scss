@@ -38,6 +38,7 @@
     .info {
       @include flex-row();
       gap: $pad-200;
+      letter-spacing: $ls-100;
 
       span {
         line-height: 1;

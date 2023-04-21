@@ -24,7 +24,7 @@ const containerVariant = {
 const skillsArray = [
   { heading: "Languages", skills: ["Javascript (ES6)", "TypeScript", "HTML", "CSS/SASS"] },
   { heading: "Tools", skills: ["Bash", "Git & Github", "Codekit", "Chrome DevTools", "MongoDB"] },
-  { heading: "Frameworks", skills: ["NEXT", "Node", "Ecpress", "Wordpress"] },
+  { heading: "Frameworks", skills: ["NEXT", "Node", "Express", "Wordpress"] },
   { heading: "Design", skills: ["Sketch", "Figma", "Font Awesome", "User Testing"] },
 ];
 

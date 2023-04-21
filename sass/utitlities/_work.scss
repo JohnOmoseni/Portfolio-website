@@ -76,6 +76,8 @@
       li {
         list-style-type: disc;
         margin-left: $pad-400;
+        letter-spacing: $ls-100;
+        line-height: 1.8;
 
         &::marker {
           color: var(--tab-clr);

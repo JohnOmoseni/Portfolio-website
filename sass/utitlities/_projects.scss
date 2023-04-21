@@ -8,6 +8,7 @@
     margin: $pad-500 0;
     @include card();
     gap: $pad-400;
+
   }
 
   .view-more {
@@ -60,6 +61,7 @@
             border-radius: $br-light;
             padding: $pad-400;
             box-shadow: $bs-100;
+            line-height: 1.7;
             width: 120%;
           }
 
@@ -77,6 +79,7 @@
           width: 50%;
           height: 100%;
           max-height: 350px;
+          margin-top: 3%;
           position: absolute;
           border-radius: $br-light;
           top: 0;

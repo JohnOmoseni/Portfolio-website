@@ -9,7 +9,7 @@
     display: grid;
     grid-template-columns: repeat(2, minmax(160px, 1fr));
     gap: $pad-500 $pad-300;
-    place-items: center;
+    place-items: start center;
 
     li {
       h3 {
@@ -20,6 +20,7 @@
       .skill {
         @include flex-column();
         gap: $pad-100;
+        letter-spacing: $ls-100;
       }
     }
   }

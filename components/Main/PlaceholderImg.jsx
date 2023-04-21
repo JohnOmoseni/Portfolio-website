@@ -10,7 +10,7 @@ const imgContainer = {
   },
 };
 
-function PlaceholderImg({ src }) {
+function PlaceholderImg({ src, text }) {
   return (
     <motion.span
       className="placeholder-img"
@@ -20,6 +20,7 @@ function PlaceholderImg({ src }) {
       viewport={{ once: true, amount: 0.2 }}
     >
       <Image src={src} alt="" className="section-img" placeholder="blur" />
+      {text && <h3>Let's be internet BFFs.&#128538;&#128420; </h3>}
     </motion.span>
   );
 }

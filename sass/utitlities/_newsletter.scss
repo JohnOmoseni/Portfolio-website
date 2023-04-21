@@ -4,13 +4,12 @@
   .container {
     @include flex-column();
     gap: $pad-400;
-    // background-image: url("/Assets/Images/petals.jpg");
-    // background-blend-mode: darken;
 
     p {
       max-width: 50ch;
       padding: $pad-200 0;
       text-align: center;
+      letter-spacing: $ls-100;
       margin: auto;
     }
 

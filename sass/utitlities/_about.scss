@@ -7,9 +7,22 @@
   .about-body {
     margin-bottom: $pad-300;
 
-    >* {
+    p {
       padding-block: $pad-200;
-      letter-spacing: 2px;
+      letter-spacing: $ls-200;
+      line-height: 1.8;
+
+      span.text-variant,
+      a {
+        color: var(--text-clr-variant-200);
+        font-size: 1rem;
+        font-family: $ff-primary-header;
+      }
+
+      svg {
+        line-height: 0;
+        background: red;
+      }
     }
 
     .skills {
@@ -21,6 +34,8 @@
       .skill {
         @include flex-row($justify: flex-start);
         gap: $pad-100;
+        letter-spacing: 2px;
+
 
         .icon {
           margin-top: 2px

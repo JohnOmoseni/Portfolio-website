@@ -88,7 +88,7 @@ export const jobs = [
     year: "October 2021",
     description: [
       "Collaborated with a team of student designers and developers to spearhead a new brand and design system for the GDSC community",
-      "Write modern, performant, maintainable code for a diverse array of the community internal projects ",
+      "Wrote modern, performant, maintainable code for a diverse array of the community internal projects ",
       "Tested sites in various browsers and devices to ensure cross-browser compatibility and mobile responsiveness",
     ],
   },
@@ -97,12 +97,12 @@ export const jobs = [
     link: "https://github.com/johnOmoseni",
     year: "Jan 2022 - Present",
     description: [
-      "Worked with a team of designers to build a marketing website and an e-commerce platform for Middle-belt, an ambitious venture originating from Funaab",
-      "Helped solidify a brand direction for Middle-belt to span across print, packaging, and web",
       "Interfaced with clients on a weekly basis, providing technological expertise and knowledge",
       "Tested sites in various browsers and devices to ensure cross-browser compatibility and mobile responsiveness",
       "Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and React",
       "Built frontend applications for multiple clients. Most especially Javascript and React applications",
+      "Worked with a team of designers to build a marketing website and an e-commerce platform for Middle-belt, an ambitious venture originating from Funaab",
+      "Helped solidify a brand direction for Middle-belt to span across print, packaging, and web",
     ],
   },
   {
@@ -135,16 +135,16 @@ export const projects = [
     imgSrc: project2,
     website: "https://loyalblaze-johnny.netlify.app",
     github: "https://github.com/johnOmoseni/loyal-blaze-design",
-    body: "A Figma design implementation using HTML & CSS/SASS. This project involved bringing a static design to life using a rich palette of colors, precise positioning and captivating shadows. This figma implementation displays a visually stunning design that engages the user and draws them into a user-experience.",
+    body: "A Figma design implementation using HTML & CSS/SASS. This project involved bringing a static design to life using a rich palette of colors, precise positioning and captivating shadows. This figma implementation displays a visually stunning design that engages the user and draws them into an exciting user-experience.",
     tools: ["HTML", "CSS", "Javascript", "Figma"],
   },
   {
-    heading: "Ecommerce",
+    heading: "E-commerce",
     title: "Gamers Mart",
     imgSrc: project3,
     website: "https://gamify-mart.vercel.app",
     github: "https://github.com/johnOmoseni/Gamers-mart",
-    body: "An ecommerce game website where users can indulge in their passion for shopping and taking your gaming experience to the next level. This project is designed to cater to all of your gaming needs, providing you with access to an extensive collection of games, from popular titles to new releases.",
+    body: "An ecommerce game website where users can indulge in their passion for shopping and taking their gaming experience to the next level. This project is designed to cater to all of your gaming needs, providing you with access to an extensive collection of games, from popular titles to new releases.",
     tools: ["React", "Redux", "Framer-motion", "Sass", "SwiperJS"],
   },
   {

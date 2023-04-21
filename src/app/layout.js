@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Johnny Omoseni || Software Developer",
+  title: "Johnny Omoseni || Frontend Developer",
   description: "Johnny Omoseni Portfolio",
   themeColor: "#181818",
 };

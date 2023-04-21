@@ -119,7 +119,7 @@ function Contact() {
           </button>
         </form>
       </div>
-      <h3>Can't wait to hear from you! Let's start a conversation &#127867; &#128175;</h3>
+      <h3>Can't wait to hear from you! &#127867; &#128175;</h3>
     </motion.section>
   );
 }
