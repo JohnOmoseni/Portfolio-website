@@ -3,7 +3,7 @@ import bgImg2 from "@assets/images/bgImg2.jpg";
 import bgImg3 from "@assets/images/bgImg3.jpg";
 import bgImg4 from "@assets/images/bgImg4.jpeg";
 
-import project1 from "@assets/images/bgImg1.png";
+import project1 from "@assets/images/boomplayer-img.png";
 import project2 from "@assets/images/loyalblaze-bg.png";
 import project3 from "@assets/images/gamersmart-bg.png";
 import project4 from "@assets/images/weatherapp-bg.png";
@@ -100,7 +100,7 @@ export const jobs = [
       "Interfaced with clients on a weekly basis, providing technological expertise and knowledge",
       "Tested sites in various browsers and devices to ensure cross-browser compatibility and mobile responsiveness",
       "Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and React",
-      "Built frontend applications for multiple clients. Most especially Javascript and React applications",
+      "Built frontend applications for multiple clients, most especially Javascript and React applications",
       "Worked with a team of designers to build a marketing website and an e-commerce platform for Middle-belt, an ambitious venture originating from Funaab",
       "Helped solidify a brand direction for Middle-belt to span across print, packaging, and web",
     ],
@@ -112,7 +112,7 @@ export const jobs = [
     year: "November 2022",
     description: [
       "Worked closely with designers and management team to develop, document, and manage the Serch platform web-app using React, Sass, and JavaScript",
-      " Proposed and implemented scalable solutions to issues identified with cloud services and applications responsible for communicating with the Serch platform",
+      "Proposed and implemented scalable solutions to issues identified with cloud services and applications responsible for communicating with the Serch platform",
       "Interfaced with user experience designers and other developers to ensure thoughtful and coherent user experiences across the Serch's Provider and User Web-apps",
     ],
   },

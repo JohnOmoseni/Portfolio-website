@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { aboutme } from "@assets/images/johnny.jpg";
+import aboutme from "@assets/images/johnny.jpg";
 
 const imgVariant = {
   hidden: { opacity: 0, scale: 0.3 },
