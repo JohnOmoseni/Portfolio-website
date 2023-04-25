@@ -4,7 +4,7 @@ import RotateWords from "./RotateWords";
 
 const animateTagLine = {
   hidden: { opacity: 0, x: "-100vw" },
-  animate: { opacity: 1, x: 0, transition: { delay: 0.4, duration: 1, type: "spring" } },
+  animate: { opacity: 1, x: 0, transition: { delay: 0.3, duration: 1, type: "spring" } },
 };
 
 const animateSubtitle = {

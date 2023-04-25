@@ -1,4 +1,3 @@
-import ManU from "components/Svgs/ManU";
 import Skills from "./Skills";
 
 function AboutBody({ variant }) {
@@ -30,7 +29,7 @@ function AboutBody({ variant }) {
         I'm a well-organized person, problem solver, independent employee with high attention to
         detail. I'm interested in the entire frontend spectrum and working on amibtious projects
         with positive people. I'm also naturally curious and perpetually working on improving my
-        skills one design problem at a time. I'm also a big Manchester United Fan {<ManU />}.
+        skills one design problem at a time.
       </p>
 
       <div className="tools">

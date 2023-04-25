@@ -83,8 +83,8 @@ export const galleryImages = [
 export const jobs = [
   {
     jobTitle: "GDSC Frontend Developer",
-    company: "GDSC Community Funaab",
-    link: "https://gdsc.community.dev/",
+    company: "GDSC FUNAAB",
+    link: "https://gdsc.community.dev/federal-university-of-agriculture-abeokuta/",
     year: "October 2021",
     description: [
       "Collaborated with a team of student designers and developers to spearhead a new brand and design system for the GDSC community",
@@ -102,7 +102,6 @@ export const jobs = [
       "Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and React",
       "Built frontend applications for multiple clients, most especially Javascript and React applications",
       "Worked with a team of designers to build a marketing website and an e-commerce platform for Middle-belt, an ambitious venture originating from Funaab",
-      "Helped solidify a brand direction for Middle-belt to span across print, packaging, and web",
     ],
   },
   {
@@ -111,7 +110,7 @@ export const jobs = [
     link: "https://serchservice.com",
     year: "November 2022",
     description: [
-      "Worked closely with designers and management team to develop, document, and manage the Serch platform web-app using React, Sass, and JavaScript",
+      "Worked closely with designers and management team to develop, document and manage the Serch platform web-app using React, Sass, and JavaScript",
       "Proposed and implemented scalable solutions to issues identified with cloud services and applications responsible for communicating with the Serch platform",
       "Interfaced with user experience designers and other developers to ensure thoughtful and coherent user experiences across the Serch's Provider and User Web-apps",
     ],

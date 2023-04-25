@@ -54,7 +54,8 @@ function Gallery({ setOpenModal }) {
         As a lover of aesthetic and beauty, this section showcases a collection of stunning art and
         captivating photographs that have been curated to inspire and evoke emotion. I believe that
         art has the power to transform a space, elevate our mood and transport us to another world.
-        Each piece has been chosen for its unique ability to capture the essence of its subject.
+        Each piece has been chosen for its unique ability to capture the essence of its
+        subject&#129496;.
       </p>
 
       <div className="gallery-content">

@@ -21,7 +21,7 @@ function RotateWords() {
     if (isTimeout) {
       ticker = setTimeout(() => {
         tick();
-      }, 14000);
+      }, 12000);
       setIsTimeout(false);
       return () => clearTimeout(ticker);
     } else {
