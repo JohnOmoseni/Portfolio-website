@@ -35,7 +35,7 @@ export const ContactInfo = () => {
         <span className="icon">
           <RxEnvelopeClosed size={18} />
         </span>
-        <p>johnnyomoseni@gmail.com</p>
+        <p>ojaywilliams100@gmail.com</p>
       </div>
     </div>
   );

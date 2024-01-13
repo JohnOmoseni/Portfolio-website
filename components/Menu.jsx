@@ -41,8 +41,12 @@ function Menu({ setOpenMenu }) {
       exit="exit"
       onClick={() => setOpenMenu(false)}
     >
-      <div className="menu-block" onClick={e => e.stopPropagation()}>
-        <span className="close-menu" onClick={() => setOpenMenu(false)} title="close-menu">
+      <div className="menu-block" onClick={(e) => e.stopPropagation()}>
+        <span
+          className="close-menu"
+          onClick={() => setOpenMenu(false)}
+          title="close-menu"
+        >
           <CgClose size="30" />
         </span>
         <nav className="nav-links">
@@ -59,7 +63,11 @@ function Menu({ setOpenMenu }) {
         </nav>
         <div className="have-an-idea">
           <h2>Have an idea?</h2>
-          <a href="#contact" className="subtitle" onClick={() => setOpenMenu(false)}>
+          <a
+            href="#contact"
+            className="subtitle"
+            onClick={() => setOpenMenu(false)}
+          >
             Tell me about it
           </a>
         </div>

@@ -8,6 +8,7 @@ function Banner() {
   const [currImg, setCurrImg] = useState(0);
 
   useEffect(() => {
+
     let i = 0;
     const changeBg = () => {
       if (i >= bgImages.length - 1) {

@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 
@@ -16,7 +15,10 @@ const linksAni = {
 
 function NavLinks({ title, link, idx, enabled, showNumber, onClick }) {
   return (
-    <motion.span variants={enabled ? linksAni : null} onClick={enabled ? onClick : null}>
+    <motion.span
+      variants={enabled ? linksAni : null}
+      onClick={enabled ? onClick : null}
+    >
       <Link
         variants={enabled ? linksAni : null}
         onClick={enabled ? onClick : null}
