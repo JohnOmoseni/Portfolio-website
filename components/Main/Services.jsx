@@ -14,59 +14,71 @@ import Git from "../Svgs/Git";
 import Firebase from "../Svgs/Firebase";
 
 const containerVariant = {
-  hidden: { opacity: 0, y: 100 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { ease: "easeIn", duration: 1.2, staggerChildren: 0.3 },
-  },
+	hidden: { opacity: 0, y: 100 },
+	visible: {
+		opacity: 1,
+		y: 0,
+		transition: { ease: "easeIn", duration: 1.2, staggerChildren: 0.3 },
+	},
 };
 const skillsArray = [
-  { heading: "Languages", skills: ["Javascript (ES6)", "TypeScript", "HTML", "CSS/SASS"] },
-  { heading: "Tools", skills: ["Bash", "Git & Github", "Codekit", "Chrome DevTools"] },
-  { heading: "Frameworks", skills: ["NEXT", "Node", "Express", "Wordpress"] },
-  { heading: "Design", skills: ["Sketch", "Figma", "Font Awesome", "User Testing"] },
+	{
+		heading: "Languages",
+		skills: ["Javascript (ES6)", "TypeScript", "Solidity", "CSS/SASS"],
+	},
+	{
+		heading: "Tools",
+		skills: ["Bash", "Git & Github", "Codekit", "Chrome DevTools"],
+	},
+	{
+		heading: "Frameworks/Libraries",
+		skills: ["NEXTJS", "TailwindCSS", "Express", "Redux"],
+	},
+	{
+		heading: "Design",
+		skills: ["Sketch", "Figma", "Font Awesome", "Adobe XD"],
+	},
 ];
 
 function Services() {
-  return (
-    <motion.section
-      className="skills-section"
-      id="skills"
-      variants={containerVariant}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.2 }}
-    >
-      <Heading name="skills" number="03." title="My Superpowers" />
-      <ul className="skills-list">
-        {skillsArray.map((skill, idx) => {
-          return <Skills {...skill} key={idx} />;
-        })}
-      </ul>
-      <div className="nav-container">
-        <div className="nav">
-          <Html5 />
-          <CSS3 />
-          <Js />
-          <Sass />
-          <NextJS />
-          <Typescript />
-          <Git />
-          <Node />
-          <MongoDB />
-          <Firebase />
-        </div>
+	return (
+		<motion.section
+			className="skills-section"
+			id="skills"
+			variants={containerVariant}
+			initial="hidden"
+			whileInView="visible"
+			viewport={{ once: true, amount: 0.2 }}
+		>
+			<Heading name="skills" number="03." title="My Superpowers" />
+			<ul className="skills-list">
+				{skillsArray.map((skill, idx) => {
+					return <Skills {...skill} key={idx} />;
+				})}
+			</ul>
+			<div className="nav-container">
+				<div className="nav">
+					<Html5 />
+					<CSS3 />
+					<Js />
+					<Sass />
+					<NextJS />
+					<Typescript />
+					<Git />
+					<Node />
+					<MongoDB />
+					<Firebase />
+				</div>
 
-        <div className="core-container"></div>
-        <div className="outer-core"></div>
-        <div className="main-core-border1"></div>
-        <div className="core-border2"></div>
-        <div className="core-border1"></div>
-        <div className="core"></div>
-      </div>
-    </motion.section>
-  );
+				<div className="core-container"></div>
+				<div className="outer-core"></div>
+				<div className="main-core-border1"></div>
+				<div className="core-border2"></div>
+				<div className="core-border1"></div>
+				<div className="core"></div>
+			</div>
+		</motion.section>
+	);
 }
 
 export default Services;
