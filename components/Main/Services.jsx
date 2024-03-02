@@ -31,8 +31,8 @@ const skillsArray = [
 		skills: ["Bash", "Git & Github", "Codekit", "Chrome DevTools"],
 	},
 	{
-		heading: "Frameworks/Libraries",
-		skills: ["NEXTJS", "TailwindCSS", "Express", "Redux"],
+		heading: "Libraries",
+		skills: ["NEXT", "TailwindCSS", "Express", "Redux"],
 	},
 	{
 		heading: "Design",

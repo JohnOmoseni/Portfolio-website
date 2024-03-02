@@ -62,7 +62,7 @@ function Column1() {
 			</motion.p>
 
 			<motion.div variants={textContainer} className="banner-title">
-				<AnimatedLetters word="John" />
+				<AnimatedLetters word="Johnny" />
 				<AnimatedLetters word="Omoseni" offset />
 			</motion.div>
 

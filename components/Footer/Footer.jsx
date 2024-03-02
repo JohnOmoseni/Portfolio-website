@@ -32,7 +32,7 @@ function Footer() {
 			<div className="even-row">
 				<span className="footer-text">
 					Designed and built with &#10084; by{" "}
-					<span className="ff-variant">John Omoseni</span>
+					<span className="ff-variant">Johnny Omoseni</span>
 				</span>
 			</div>
 		</footer>

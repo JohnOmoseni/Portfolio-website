@@ -85,7 +85,7 @@ export const jobs = [
 		jobTitle: "GDSC Frontend Developer",
 		company: "GDSC FUNAAB",
 		link: "https://gdsc.community.dev/federal-university-of-agriculture-abeokuta/",
-		year: "October 2021",
+		year: "May 2023",
 		description: [
 			"Collaborated with a team of student designers and developers to spearhead a new brand and design system for the GDSC community",
 			"Wrote modern, performant, maintainable code for a diverse array of the community internal projects ",
@@ -95,7 +95,7 @@ export const jobs = [
 	{
 		jobTitle: "Freelancer",
 		link: "https://github.com/JohnOmoseni",
-		year: "Jan 2022 - Present",
+		year: "Jan 2024 - Present",
 		description: [
 			"Interfaced with clients on a weekly basis, providing technological expertise and knowledge",
 			"Tested sites in various browsers and devices to ensure cross-browser compatibility and mobile responsiveness",
@@ -108,7 +108,7 @@ export const jobs = [
 		jobTitle: "Frontend Engineer (Team-Lead)",
 		company: "Serch",
 		link: "https://serchservice.com",
-		year: "November 2022",
+		year: "February 2022",
 		description: [
 			"Worked closely with designers and management team to develop, document and manage the Serch platform web-app using React, Sass, and JavaScript",
 			"Proposed and implemented scalable solutions to issues identified with cloud services and applications responsible for communicating with the Serch platform",
