@@ -1,5 +1,3 @@
-import { AiOutlineWhatsApp } from "react-icons/ai";
-
 function SocialLinks() {
 	return (
 		<ul className="social-links">

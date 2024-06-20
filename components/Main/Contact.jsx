@@ -69,6 +69,7 @@ function Contact() {
         expectations. Also if you have a question, proposal, idea or you just want to say hi, Go
         ahead &#128516;
       </p>
+      
       <ContactInfo />
 
       <div className="content">

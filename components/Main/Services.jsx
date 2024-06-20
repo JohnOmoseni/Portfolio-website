@@ -24,19 +24,44 @@ const containerVariant = {
 const skillsArray = [
 	{
 		heading: "Languages",
-		skills: ["Javascript (ES6)", "TypeScript", "Solidity", "CSS/SASS"],
+		skills: ["Javascript (ES6)", "TypeScript", "Solidity", "Leo"],
 	},
 	{
 		heading: "Tools",
-		skills: ["Bash", "Git & Github", "Codekit", "Chrome DevTools"],
+		skills: [
+			"Bash",
+			"Git & Github",
+			"Codekit",
+			"Chrome DevTools",
+			"Webpack",
+			"Vercel",
+			"XCode",
+			"VSCode",
+		],
 	},
 	{
-		heading: "Libraries",
-		skills: ["NEXT", "TailwindCSS", "Express", "Redux"],
+		heading: "Frontend Libraries",
+		skills: [
+			"React",
+			"NextJS",
+			"Expo",
+			"Redux",
+			"Tanstack Query",
+			"SWR",
+			"TailwindCSS",
+			"ShadCN",
+			"SCSS",
+			"CSS3",
+			"HTML5",
+		],
+	},
+	{
+		heading: "BaaS",
+		skills: ["Firebase", "Supabase", "Appwrite"],
 	},
 	{
 		heading: "Design",
-		skills: ["Sketch", "Figma", "Font Awesome", "Adobe XD"],
+		skills: ["Sketch", "Figma", "Adobe XD"],
 	},
 ];
 

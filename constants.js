@@ -3,13 +3,14 @@ import bgImg2 from "@assets/images/bgImg2.jpg";
 import bgImg3 from "@assets/images/bgImg3.jpg";
 import bgImg4 from "@assets/images/bgImg4.jpeg";
 
-import project1 from "@assets/images/boomplayer-img.png";
-import project2 from "@assets/images/loyalblaze-bg.png";
-import project3 from "@assets/images/gamersmart-bg.png";
-import project4 from "@assets/images/weatherapp-bg.png";
-import project5 from "@assets/images/debitty-card.jpg";
-import project6 from "@assets/images/fontpalette-bg.png";
-import project7 from "@assets/images/letsview-dark.png";
+import forexchatroom from "@assets/images/forexchatroom.png";
+import bugupay from "@assets/images/bugupay.png";
+import movbit from "@assets/images/movbit.png";
+import betbinary from "@assets/images/betbinary.png";
+import iwebchat from "@assets/images/iwebchat.png";
+import boomplay from "@assets/images/boomplayer-img.png";
+import gamersmart from "@assets/images/gamersmart-bg.png";
+import fontipsums from "@assets/images/fontpalette-bg.png";
 
 import gallery1 from "@assets/images/gallery-1.jpg";
 import gallery2 from "@assets/images/gallery-2.webp";
@@ -82,20 +83,33 @@ export const galleryImages = [
 //Jobs
 export const jobs = [
 	{
-		jobTitle: "GDSC Frontend Developer",
-		company: "GDSC FUNAAB",
-		link: "https://gdsc.community.dev/federal-university-of-agriculture-abeokuta/",
-		year: "May 2023",
+		jobTitle: "Frontend Engineer",
+		company: "Octave Incorporations",
+		link: "https://github.com/orgs/OctaveIncorporations/repositories",
+		year: "October 2023",
 		description: [
-			"Collaborated with a team of student designers and developers to spearhead a new brand and design system for the GDSC community",
-			"Wrote modern, performant, maintainable code for a diverse array of the community internal projects ",
-			"Tested sites in various browsers and devices to ensure cross-browser compatibility and mobile responsiveness",
+			"Worked closely with designers, backend developers and management team to develop, document and manage the Octave platform",
+			"Proposed and implemented scalable solutions to issues identified with cloud services and applications responsible for communicating with the Octave platform",
+			"Conduct code reviews and ensure adherence to coding standards",
+		],
+	},
+	{
+		jobTitle: "Senior Frontend Engineer",
+		company: "iauconsultingservices",
+		link: "",
+		year: "Remote",
+		description: [
+			"Design, development, and implementation of complex frontend features using NextJs, Typescript, React, Redux, JavaScript and other web technologies and leverage REST services and other third-party APIs",
+			"Build scalable products that is user friendly with the use of OpenAI integration.",
+			"Collaborate closely with designers, product managers, and backend engineers to ensure a seamless user experience and minimize complexity",
+			"Troubleshoot and debug issues across multiple browsers and devices",
+			"Optimize applications for maximum speed and scalability",
 		],
 	},
 	{
 		jobTitle: "Freelancer",
 		link: "https://github.com/JohnOmoseni",
-		year: "Jan 2024 - Present",
+		year: "Present",
 		description: [
 			"Interfaced with clients on a weekly basis, providing technological expertise and knowledge",
 			"Tested sites in various browsers and devices to ensure cross-browser compatibility and mobile responsiveness",
@@ -104,29 +118,113 @@ export const jobs = [
 			"Worked with a team of designers to build a marketing website and an e-commerce platform for Middle-belt, an ambitious venture originating from Funaab",
 		],
 	},
-	{
-		jobTitle: "Frontend Engineer (Team-Lead)",
-		company: "Serch",
-		link: "https://serchservice.com",
-		year: "February 2022",
-		description: [
-			"Worked closely with designers and management team to develop, document and manage the Serch platform web-app using React, Sass, and JavaScript",
-			"Proposed and implemented scalable solutions to issues identified with cloud services and applications responsible for communicating with the Serch platform",
-			"Interfaced with user experience designers and other developers to ensure thoughtful and coherent user experiences across the Serch's Provider and User Web-apps",
-		],
-	},
 ];
 
 // Projects
 export const projects = [
 	{
+		heading: "Finance & Social Media",
+		title: "Forex Chatroom",
+		imgSrc: forexchatroom,
+		website: "https://fx-business-chatroom.vercel.app",
+		github: "https://github.com/JohnOmoseni/FX-business-chatroom",
+		body: "An interactive web application designed to facilitate seamless communication and collaboration among users in real-time. Forex-chatroom provides a robust platform for users to exchange currencies, join chat rooms, exchange messages, and share multimedia content effortlessly.",
+		tools: [
+			"React",
+			"Sass",
+			"Redux toolkit",
+			"TailwindCSS",
+			"Javascript",
+			"Firebase",
+			"Flutterwave SDK",
+		],
+	},
+	{
+		heading: "Finance",
+		title: "BuguPay",
+		imgSrc: bugupay,
+		website: "https://bugupay.vercel.app",
+		github: "https://github.com/JohnOmoseni/bugupay",
+		body: "BuguPay is a cutting-edge web application designed for smart and convenient bill payments. It offers users a fast, transparent, and secure platform to manage and pay all their bills online with ease.",
+		tools: [
+			"NextJS",
+			"Typescript",
+			"Redux toolkit",
+			"TailwindCSS",
+			"ShadCN",
+			"Paystack SDK",
+			"Firebase",
+			"Framer Motion",
+		],
+	},
+	{
+		heading: "Web3",
+		title: "MovBit",
+		imgSrc: movbit,
+		website: "https://movbit.vercel.app",
+		github: "https://github.com/JohnOmoseni/MovBit",
+		body: "Movbit is an innovative Move to Earn platform that transforms your physical activities into valuable rewards. With Movbit, every step you take—whether walking, running, or exercising— holds real value. It incentivizes a healthy lifestyle by allowing users to earn rewards for their movements.",
+		tools: [
+			"NextJS",
+			"Typescript",
+			"RainbowKit",
+			"Viem",
+			"wagmi",
+			"Redux toolkit",
+			"TailwindCSS",
+			"Framer Motion",
+		],
+	},
+	{
+		heading: "Betting",
+		title: "BetBinary",
+		imgSrc: betbinary,
+		website: "https://bet-binary.vercel.app",
+		github: "https://github.com/JohnOmoseni/bet-binary",
+		body: "Bet-Binary is a revolutionary Web3 betting platform that allows users to bet and win on a wide range of events, including sports, stocks, and cryptocurrencies. Leveraging the power of blockchain technology, Bet-Binary ensures a transparent, secure, and decentralized betting experience.",
+		tools: [
+			"NextJS",
+			"Javascript",
+			"Tanstack Query",
+			"Tanstack Table",
+			"wagmi",
+			"Viem",
+			"Redux toolkit",
+			"TailwindCSS",
+		],
+	},
+	{
+		heading: "AI",
+		title: "iWebChat",
+		imgSrc: iwebchat,
+		website: "https://iwebchat.vercel.app",
+		github: "https://github.com/JohnOmoseni/iWebChat",
+		body: "iWebChat is an advanced web application designed to enhance your chatbot experience with cutting-edge AI technology powered by your own data. The platform ensures more engaging and enjoyable interactions with your audience, making communication seamless and efficient.",
+		tools: [
+			"NextJS",
+			"Typescript",
+			"Tanstack Query",
+			"Recharts",
+			"Redux toolkit",
+			"TailwindCSS",
+		],
+	},
+	{
 		heading: "Music",
 		title: "Boomplayer Clone",
-		imgSrc: project1,
+		imgSrc: boomplay,
 		website: "https://boomplayer-clone.vercel.app",
 		github: "https://github.com/JohnOmoseni/boomplayer-clone",
 		body: "A web based replica of the popular media, Boomplayer. This project is a minimal recreation of the app's key features and user interfaces, designed to offer a seamless and intuitive multimedia experience. The player offers a variety of playback options including repeat, shuffle and playlist support. Built for visualizing personalized shazam data such as top artists, tracks, recommendations, and audio features.",
-		tools: ["React", "Sass", "Redux", "SHAZAM", "RapidAPI", "SwiperJS"],
+		tools: [
+			"React",
+			"Sass",
+			"Redux",
+			"React Query",
+			"SHAZAM",
+			"RapidAPI",
+			"SwiperJS",
+		],
 	},
 	{
 		heading: "Design",
@@ -140,46 +238,19 @@ export const projects = [
 	{
 		heading: "E-commerce",
 		title: "Gamers Mart",
-		imgSrc: project3,
+		imgSrc: gamersmart,
 		website: "https://gamify-mart.vercel.app",
 		github: "https://github.com/JohnOmoseni/Gamers-mart",
 		body: "An ecommerce game website where users can indulge in their passion for shopping and taking their gaming experience to the next level. This project is designed to cater to all of your gaming needs, providing you with access to an extensive collection of games, from popular titles to new releases.",
 		tools: ["React", "Redux", "Framer-motion", "Sass", "SwiperJS"],
 	},
 	{
-		heading: "Weather",
-		title: "Weather App",
-		imgSrc: project4,
-		website: "https://weatherapp-johnny-dev.vercel.app",
-		github: "https://github.com/JohnOmoseni/the-weather-app",
-		body: "An interesting modern weather app that brings you accurate and up-to-date weather information right to your fingertips! With its user-friendly interface and stunning design, this weather webapp is perfect for anyone looking to stay on top of changing weather patterns.",
-		tools: ["React", "WeatherAPI", "Sass", "Git", "Vercel"],
-	},
-	{
-		heading: "Design",
-		title: "Glossy Credit Card Design",
-		imgSrc: project5,
-		website: "https://debittycard.netlify.app",
-		github: "https://github.com/JohnOmoseni/glossy-credit-card-design",
-		body: "A glossy credit card design implementation with keyboard navigation that allows users to move to the next input field whilst entering their card number. This credit card form design featues a sleek, glossy design that is both visually appealing and user-friendly.",
-		tools: ["HTML", "CSS", "Javascript", "Netlify"],
-	},
-	{
 		heading: "Typography",
 		title: "Fontsipsums",
-		imgSrc: project6,
+		imgSrc: fontipsums,
 		website: "https://fontpalette-johnny-dev.vercel.app/",
 		github: "https://github.com/JohnOmoseni/fontsipsums",
 		body: "As someone who has an eye for pretty letters, I wanted a way to visually see different font combinations together. I whipped up this simple website to display some of my favourite pairings combined with some fun lorem ipsum variations I found on the web. This project lets you explore different font pairings to your heart's content😉.",
 		tools: ["HTML", "CSS", "Vercel", "Google-Fonts"],
-	},
-	{
-		heading: "Social Media",
-		title: "LetsView",
-		imgSrc: project7,
-		website: "https://letsview.netlify.app/",
-		github: "https://github.com/JohnOmoseni/letsview",
-		body: "A mini social media app. This project is designed for users to connect, share and engage with each other. Its sleek and modern user interface provides an exceptional user experience, making it easy for users to navigate and interact with the app.",
-		tools: ["HTML", "CSS", "Javascript", "Vscode", "Netlify"],
 	},
 ];

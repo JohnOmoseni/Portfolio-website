@@ -1,188 +1,185 @@
-@use '../abstracts/' as *;
+@use "../abstracts/" as *;
 
 .contact-page {
-  --br-clr: transparent;
-  --valid: #00bd8ea5;
-  --invalid: #dc143c80;
-  --focus: var(--br-clr);
+	--br-clr: transparent;
+	--valid: #00bd8ea5;
+	--invalid: #dc143c80;
+	--focus: var(--br-clr);
 
-  .contact-heading {
-    @include flex-column();
-    align-items: center;
+	.contact-heading {
+		@include flex-column();
+		align-items: center;
 
-    .tag {
-      align-self: center
-    }
-  }
+		.tag {
+			align-self: center;
+		}
+	}
 
-  .subtitle {
-    text-align: center;
-    max-width: 50ch;
-    margin: auto;
-    letter-spacing: $ls-100;
-  }
+	.subtitle {
+		text-align: center;
+		max-width: 50ch;
+		margin: auto;
+		letter-spacing: $ls-100;
+	}
 
-  h3 {
-    text-align: center;
-    font-family: $ff-primary-header;
-    padding: $pad-300 0;
-  }
+	h3 {
+		text-align: center;
+		font-family: $ff-primary-header;
+		padding: $pad-300 0;
+	}
 
-  .contact-info {
-    @include flex-column();
-    margin: $pad-400 auto;
-    width: max-content;
-    align-items: center;
-    gap: 0.4em;
+	.contact-info {
+		@include flex-column();
+		margin: $pad-400 auto;
+		width: max-content;
+		align-items: center;
+		gap: 0.4em;
 
-    .info {
-      @include flex-row();
-      gap: $pad-200;
-      letter-spacing: $ls-100;
+		.info {
+			@include flex-row();
+			justify-items: flex-start;
+			gap: $pad-200;
+			letter-spacing: $ls-100;
 
-      span {
-        line-height: 1;
-      }
+			span {
+				line-height: 1;
+			}
+		}
+	}
 
-    }
-  }
+	.content {
+		margin-block: $pad-400;
 
-  .content {
-    margin-block: $pad-400;
+		.img-container {
+			border-radius: $br-light;
+			width: 250px;
+			height: 250px;
+			order: 2;
+			margin: auto;
+		}
 
-    .img-container {
-      border-radius: $br-light;
-      width: 250px;
-      height: 250px;
-      order: 2;
-      margin: auto;
-    }
+		form {
+			width: 100%;
+			margin-block: $pad-300;
 
-    form {
-      width: 100%;
-      margin-block: $pad-300;
+			input,
+			textarea {
+				@include form-input-reset();
+				display: inline-block;
+				width: 100%;
+				margin-block: $pad-200;
+				padding: $pad-200 $pad-300;
+				border: 1px outset var(--br-clr);
+				border-radius: $br-light;
+				color: var(--text-white);
+				box-shadow: 2px 3px 6px rgba(black, 0.5), 0px -1px rgba(white, 0.3),
+					inset 1px 0px rgba(white, 0.3);
 
-      input,
-      textarea {
-        @include form-input-reset();
-        display: inline-block;
-        width: 100%;
-        margin-block: $pad-200;
-        padding: $pad-200 $pad-300;
-        border: 1px outset var(--br-clr);
-        border-radius: $br-light;
-        color: var(--text-white);
-        box-shadow: 2px 3px 6px rgba(black, 0.5),
-          0px -1px rgba(white, 0.3),
-          inset 1px 0px rgba(white, 0.3);
+				&:focus {
+					box-shadow: $bs-input-field-200;
+				}
 
-        &:focus {
-          box-shadow: $bs-input-field-200;
-        }
+				&::placeholder {
+					color: #666;
+					font-style: italic;
+					font-weight: $fw-semi-bold;
+				}
+			}
 
-        &::placeholder {
-          color: #666;
-          font-style: italic;
-          font-weight: $fw-semi-bold;
-        }
-      }
+			textarea {
+				resize: none;
 
-      textarea {
-        resize: none;
+				&::-webkit-scrollbar {
+					width: 0;
+					height: 0;
+				}
+			}
+		}
 
-        &::-webkit-scrollbar {
-          width: 0;
-          height: 0;
-        }
-      }
-    }
+		.form-group:has(:invalid) :is(input, textarea) {
+			--br-clr: var(--invalid);
+		}
 
-    .form-group:has(:invalid) :is(input, textarea) {
-      --br-clr: var(--invalid)
-    }
+		.form-group:has(:invalid:not(:focus)) :is(input, textarea) {
+			animation: shake 0.65s linear;
+		}
 
-    .form-group:has(:invalid:not(:focus)) :is(input, textarea) {
-      animation: shake 0.65s linear;
-    }
+		.form-group:has(:focus) :is(input, textarea) {
+			--br-clr: var(--focus);
+		}
 
-    .form-group:has(:focus) :is(input, textarea) {
-      --br-clr: var(--focus)
-    }
+		.form-group:has(:valid) :is(input, textarea) {
+			--br-clr: var(--valid);
+		}
 
-    .form-group:has(:valid) :is(input, textarea) {
-      --br-clr: var(--valid)
-    }
+		.form-group:has(:placeholder-shown) :is(input, textarea) {
+			--br-clr: var(--blur);
+		}
 
-    .form-group:has(:placeholder-shown) :is(input, textarea) {
-      --br-clr: var(--blur);
-    }
-
-    .form-group:has(:placeholder-shown:not(:focus)) :is(input, textarea) {
-      animation: none
-    }
-  }
+		.form-group:has(:placeholder-shown:not(:focus)) :is(input, textarea) {
+			animation: none;
+		}
+	}
 }
 
 @mixin contact-laptop() {
-  .contact-page {
-    .heading {
-      width: 100%;
+	.contact-page {
+		.heading {
+			width: 100%;
 
-      .tag {
-        font-size: $fs-300;
-        align-self: center;
-      }
-    }
+			.tag {
+				font-size: $fs-300;
+				align-self: center;
+			}
+		}
 
-    .subtitle {
-      max-width: 70%;
-    }
+		.subtitle {
+			max-width: 70%;
+		}
 
-    .contact-info {
-      padding-left: 0%;
-    }
+		.contact-info {
+			padding-left: 0%;
+		}
 
-    .content {
-      display: grid;
-      grid-template-columns: 1fr max-content;
-      gap: $pad-400;
-      width: 90%;
-      margin: 3em auto 2em;
+		.content {
+			display: grid;
+			grid-template-columns: 1fr max-content;
+			gap: $pad-400;
+			width: 90%;
+			margin: 3em auto 2em;
 
-      .img-container {
-        width: 320px;
-        height: 320px;
-        justify-self: end;
-        margin: 15% auto 0;
-      }
+			.img-container {
+				width: 320px;
+				height: 320px;
+				justify-self: end;
+				margin: 15% auto 0;
+			}
 
-      form {
-        margin: auto
-      }
-    }
-
-  }
+			form {
+				margin: auto;
+			}
+		}
+	}
 }
 
 @keyframes shake {
+	0%,
+	100% {
+		transform: translateX(0);
+	}
 
-  0%,
-  100% {
-    transform: translateX(0)
-  }
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		transform: translateX(-4px);
+	}
 
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    transform: translateX(-4px)
-  }
-
-  20%,
-  40%,
-  60%,
-  80% {
-    transform: translateX(4px)
-  }
+	20%,
+	40%,
+	60%,
+	80% {
+		transform: translateX(4px);
+	}
 }

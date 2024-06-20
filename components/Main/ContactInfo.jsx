@@ -35,7 +35,13 @@ export const ContactInfo = () => {
 				<span className="icon">
 					<RxEnvelopeClosed size={18} />
 				</span>
-				<p>ojaywilliams100@gmail.com</p>
+				<a
+					href="mailto:ojaywilliams100@gmail.com"
+					className="email fs-small ff-variant"
+					title="Email"
+				>
+					ojaywilliams100@gmail.com
+				</a>{" "}
 			</div>
 		</div>
 	);

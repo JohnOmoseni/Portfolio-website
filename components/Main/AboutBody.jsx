@@ -15,18 +15,6 @@ function AboutBody({ variant }) {
 				experiences.&#128640;
 			</p>
 			<p>
-				I once led the frontend team at&nbsp;
-				<a
-					href="https://github.com/Serchservice"
-					target="_blank"
-					rel="noreferrer noopener"
-				>
-					Serch
-				</a>
-				, a request service startup through building multiple React applications
-				into a robust in-house and outdoor service platform.
-			</p>
-			<p>
 				Frontend development for me is a perfect blend of creativity, critical
 				thinking and collaboration. It's a field that consistently pushes me to
 				enhance my skills and knowledge, providing me with continual challenges.
