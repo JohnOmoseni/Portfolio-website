@@ -10,6 +10,7 @@ import betbinary from "@assets/images/betbinary.png";
 import iwebchat from "@assets/images/iwebchat.png";
 import boomplay from "@assets/images/boomplayer-img.png";
 import gamersmart from "@assets/images/gamersmart-bg.png";
+import loyalblaze from "@assets/images/loyalblaze-bg.png";
 import fontipsums from "@assets/images/fontpalette-bg.png";
 
 import gallery1 from "@assets/images/gallery-1.jpg";
@@ -229,7 +230,7 @@ export const projects = [
 	{
 		heading: "Design",
 		title: "Loyal Blaze",
-		imgSrc: project2,
+		imgSrc: loyalblaze,
 		website: "https://loyalblaze-johnny.netlify.app",
 		github: "https://github.com/JohnOmoseni/loyal-blaze-design",
 		body: "A Figma design implementation using HTML & CSS/SASS. This project involved bringing a static design to life using a rich palette of colors, precise positioning and captivating shadows. This figma implementation displays a visually stunning design that engages the user and draws them into an exciting user-experience.",

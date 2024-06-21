@@ -6,12 +6,12 @@ function AboutBody({ variant }) {
 			<p>
 				Hello there!&#128075; It's nice that you're taking the time to check out
 				my portfolio&#128522;. I'm
-				<span className="text-variant"> &nbsp;Johnny</span> and I'm based in
-				Nigeria. I'm passionate about converting ideas into real life products
-				and building solutions that runs on the internet. Over the last 2 years,
-				I've developed products for businesses, providing solutions on small
-				business websites to enterprise web applications with focus on quality,
-				beautiful user interfaces, accessibility and fast user
+				<span className="text-variant"> &nbsp;John</span> and I'm based in
+				Lagos, Nigeria. I'm passionate about converting ideas into real life
+				products and building solutions that runs on the internet. Over the last
+				2 years, I've developed products for businesses, providing solutions on
+				small business websites to enterprise web applications with focus on
+				quality, beautiful user interfaces, accessibility and fast user
 				experiences.&#128640;
 			</p>
 			<p>

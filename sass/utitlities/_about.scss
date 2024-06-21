@@ -1,90 +1,89 @@
-@use '../abstracts/' as *;
+@use "../abstracts/" as *;
 
 .about {
-  position: relative;
-  padding-block: 4em 3em;
+	position: relative;
+	padding-block: 4em 3em;
+	width: 100%;
+	max-width: 800px;
+	margin-inline: auto;
 
-  .about-body {
-    margin-bottom: $pad-300;
+	.about-body {
+		margin-bottom: $pad-300;
+		text-align: justify;
+		padding-inline: 0.5em;
 
-    p {
-      padding-block: $pad-200;
-      letter-spacing: $ls-200;
-      line-height: 1.8;
+		p {
+			padding-block: $pad-200;
+			letter-spacing: $ls-200;
+			line-height: 1.8;
 
-      span.text-variant,
-      a {
-        color: var(--text-clr-variant-200);
-        font-size: 1rem;
-        font-family: $ff-primary-header;
-      }
+			span.text-variant,
+			a {
+				color: var(--text-clr-variant-200);
+				font-size: 1rem;
+				font-family: $ff-primary-header;
+			}
 
-      svg {
-        line-height: 0;
-        background: red;
-      }
-    }
+			svg {
+				line-height: 0;
+				background: red;
+			}
+		}
 
-    .skills {
-      margin: $pad-100;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: $pad-100 $pad-300;
+		.skills {
+			margin: $pad-100;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: $pad-100 $pad-300;
 
-      .skill {
-        @include flex-row($justify: flex-start);
-        gap: $pad-100;
-        letter-spacing: 2px;
+			.skill {
+				@include flex-row($justify: flex-start);
+				gap: $pad-100;
+				letter-spacing: 2px;
 
+				.icon {
+					margin-top: 2px;
+				}
+			}
+		}
+	}
 
-        .icon {
-          margin-top: 2px
-        }
-      }
-    }
-  }
+	.img-container {
+		width: 320px;
+		height: 320px;
+		margin: $pad-600 auto $pad-400;
+		border-radius: $br-round;
+		padding: $pad-200;
+		transition: $transition;
+		overflow: hidden;
+		box-shadow: 2px 3px 8px rgba(black, 0.7), 0px -2px 3px rgba(white, 0.3);
+		filter: contrast(1) brightness(40%) saturate(3);
 
-  .img-container {
-    width: 320px;
-    height: 320px;
-    margin: $pad-600 auto $pad-400;
-    border-radius: $br-round;
-    padding: $pad-200;
-    transition: $transition;
-    overflow: hidden;
-    box-shadow: 2px 3px 8px rgba(black, 0.7),
-      0px -2px 3px rgba(white, 0.3);
-    filter: contrast(1) brightness(40%) saturate(3);
+		img {
+			transition: $transition-200;
+		}
 
-    img {
+		&:hover {
+			filter: saturate(2) brightness(70%);
 
-      transition: $transition-200;
-    }
-
-    &:hover {
-      filter: saturate(2) brightness(70%);
-
-      img {
-        scale: 1.08;
-      }
-    }
-  }
+			img {
+				scale: 1.08;
+			}
+		}
+	}
 }
 
 @mixin about-laptop() {
-  .about {
-    .content {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: $pad-500;
-
-      .img-container {
-        width: 350px;
-        height: 350px;
-        align-self: center;
-        justify-self: center;
-        margin: 0;
-      }
-    }
-  }
+	.about {
+		.content {
+			.img-container {
+				width: 400px;
+				height: 400px;
+				align-self: center;
+				justify-self: center;
+				margin-top: 3rem;
+				margin-inline: auto;
+			}
+		}
+	}
 }

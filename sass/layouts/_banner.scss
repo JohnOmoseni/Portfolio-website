@@ -3,172 +3,175 @@
 @use "../components/bubbles" as *;
 
 .banner {
-  --clr-variant: var(--text-clr-variant);
+	--clr-variant: var(--text-clr-variant);
 
-  @include bg-image();
-  position: relative;
-  min-height: 100vh;
-  background-blend-mode: darken;
+	@include bg-image();
+	position: relative;
+	min-height: 100vh;
+	background-blend-mode: darken;
 
-  padding: 18vh $pad-200 $pad-200;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-  transition: $transition;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1em;
-  transition: $transition;
+	padding: 18vh $pad-200 $pad-200;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	transition: $transition;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1em;
+	transition: $transition;
 
-  &::before {
-    content: '';
-    position: absolute;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 15%, transparent) !important;
-    inset: 0;
-    z-index: -1;
-  }
+	&::before {
+		content: "";
+		position: absolute;
+		background: linear-gradient(
+			to top,
+			rgba(0, 0, 0, 0.6) 15%,
+			transparent
+		) !important;
+		inset: 0;
+		z-index: -1;
+	}
 
+	.column-1 {
+		color: var(--txt-white);
+		width: 100%;
+		padding: 0 $pad-200;
 
-  .column-1 {
-    color: var(--txt-white);
-    width: 100%;
-    padding: 0 $pad-200;
+		p.tagline {
+			font-family: $ff-variant;
+			font-size: $fs-250;
+			line-height: 1.2;
+			letter-spacing: $ls-100;
+			color: var(--clr-variant);
+			text-align: center;
+		}
 
+		.banner-title {
+			@include flex-column();
+			align-items: center;
+			gap: 1rem;
+		}
 
-    p.tagline {
-      font-family: $ff-variant;
-      font-size: $fs-250;
-      line-height: 1.2;
-      letter-spacing: $ls-100;
-      color: var(--clr-variant);
-      text-align: center;
-    }
+		.flex-container {
+			display: flex;
+			gap: 1px;
+			text-align: center;
+			user-select: none;
 
-    .banner-title {
-      @include flex-column();
-      align-items: center;
-      gap: 0.7rem;
-    }
+			h1 {
+				color: var(--text-white);
+				line-height: 1;
+				margin-top: $pad-50;
+				font-size: $fs-primary-header;
+			}
 
-    .flex-container {
-      display: flex;
-      gap: 1px;
-      text-align: center;
-      user-select: none;
+			&.offset {
+				margin: -14px 0 0;
+			}
+		}
 
-      h1 {
-        color: var(--text-white);
-        line-height: 0.9;
-        margin-top: $pad-50;
-        font-size: $fs-primary-header;
-      }
+		.changing-words {
+			--clr-variant: hsl(169, 70%, 40%);
 
-      &.offset {
-        margin: -14px 0 0;
-      }
-    }
+			padding: 0.3em 0 0;
+			min-height: 50px;
+			color: var(--clr-variant);
+			line-height: 1.2;
+			font-size: $fs-600;
+			font-family: $ff-variant;
+			text-shadow: $ts-200;
+			text-align: center;
+			-webkit-text-stroke: hsla(0, 0%, 64%, 0.376) 1px;
+		}
 
-    .changing-words {
-      --clr-variant: hsl(169, 70%, 40%);
+		p.text {
+			margin: $pad-600 auto $pad-500;
+			word-spacing: 2px;
+			font-weight: bold;
+			color: var(--text-grey-200);
+			letter-spacing: $ls-100;
+			text-align: center;
+			max-width: 60ch;
+		}
 
-      padding: 0.3em 0 0;
-      min-height: 50px;
-      color: var(--clr-variant);
-      line-height: 1.2;
-      font-size: $fs-600;
-      font-family: $ff-variant;
-      text-shadow: $ts-200;
-      text-align: center;
-      -webkit-text-stroke: hsla(0, 0%, 64%, 0.376) 1px;
-    }
+		.banner-btn {
+			display: flex;
+			width: max-content;
+			margin: $pad-500 auto;
+		}
+	}
 
-
-    p.text {
-      margin: $pad-600 auto $pad-500;
-      word-spacing: 2px;
-      font-weight: bold;
-      color: var(--text-grey-200);
-      letter-spacing: $ls-100;
-      text-align: center;
-      max-width: 60ch;
-    }
-
-    .banner-btn {
-      display: flex;
-      width: max-content;
-      margin: $pad-500 auto;
-    }
-  }
-
-  .column-2 {
-    width: 100%;
-    max-width: 340px;
-    height: 340px;
-    pointer-events: none;
-    margin: auto;
-  }
+	.column-2 {
+		width: 100%;
+		max-width: 340px;
+		height: 340px;
+		pointer-events: none;
+		margin: auto;
+	}
 }
 
-@mixin banner-tablet() {}
+@mixin banner-tablet() {
+}
 
 @mixin banner-laptop() {
-  .banner {
-    --bottom: 5vh;
+	.banner {
+		--bottom: 5vh;
 
-    display: grid;
-    grid-template-columns: 1fr max-content;
-    gap: $pad-200;
-    padding: 20vh 7% var(--bottom);
+		display: grid;
+		grid-template-columns: 1fr max-content;
+		gap: $pad-200;
+		padding: 20vh 7% var(--bottom);
 
-    .column-1 {
-      position: relative;
-      align-items: flex-start;
+		.column-1 {
+			position: relative;
+			align-items: flex-start;
 
-      p.tagline {
-        text-align: left;
-        margin-left: 0.5em;
-      }
+			p.tagline {
+				text-align: left;
+				margin-left: 0.5em;
+			}
 
-      .banner-title {
-        display: block;
-        margin-left: -10px;
-      }
+			.banner-title {
+				display: block;
+				margin-left: -10px;
+			}
 
-      .flex-container {
-        text-align: center;
+			.flex-container {
+				text-align: center;
 
-        h1 {
-          line-height: 1
-        }
+				h1 {
+					line-height: 1.1;
+				}
 
-        &.offset {
-          margin-top: -18px;
-        }
-      }
+				&.offset {
+					margin-top: -18px;
+				}
+			}
 
-      .changing-words {
-        text-align: left;
-      }
+			.changing-words {
+				text-align: left;
+			}
 
-      p.text {
-        max-width: 50ch;
-        text-align: left;
-        margin: $pad-400 0;
-      }
+			p.text {
+				max-width: 55ch;
+				line-height: 1.7;
+				text-align: left;
+				margin: $pad-300 0;
+			}
 
-      .banner-btn {
-        margin: $pad-500 0;
-      }
-    }
+			.banner-btn {
+				margin: $pad-500 0;
+			}
+		}
 
-    .column-2 {
-      position: relative;
-      top: -5%;
-      justify-self: center;
-      padding-inline: 1em;
-      max-width: 600px;
-      height: 600px;
-    }
-  }
+		.column-2 {
+			position: relative;
+			top: -5%;
+			justify-self: center;
+			padding-inline: 1em;
+			max-width: 600px;
+			height: 600px;
+		}
+	}
 }
