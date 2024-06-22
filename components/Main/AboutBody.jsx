@@ -9,7 +9,7 @@ function AboutBody({ variant }) {
 				<span className="text-variant"> &nbsp;John</span> and I'm based in
 				Lagos, Nigeria. I'm passionate about converting ideas into real life
 				products and building solutions that runs on the internet. Over the last
-				2 years, I've developed products for businesses, providing solutions on
+				4 years, I've developed products for businesses, providing solutions on
 				small business websites to enterprise web applications with focus on
 				quality, beautiful user interfaces, accessibility and fast user
 				experiences.&#128640;
@@ -35,10 +35,11 @@ function AboutBody({ variant }) {
 					that effect
 				</p>
 				<ul className="skills">
-					<Skills title="Web3.js" />
+					<Skills title="Solidity" />
 					<Skills title="Three.js" />
 					<Skills title="Ether.js" />
 					<Skills title="Leo" />
+					<Skills title="Viem" />
 				</ul>
 			</div>
 		</div>

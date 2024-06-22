@@ -46,6 +46,7 @@ const skillsArray = [
 			"NextJS",
 			"Expo",
 			"Redux",
+			"React Native",
 			"Tanstack Query",
 			"SWR",
 			"TailwindCSS",
