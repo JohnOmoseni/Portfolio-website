@@ -7,7 +7,7 @@ import forexchatroom from "@assets/images/forexchatroom.png";
 import bugupay from "@assets/images/bugupay.png";
 import movbit from "@assets/images/movbit.png";
 import betbinary from "@assets/images/betbinary.png";
-import iwebchat from "@assets/images/iwebchat.png";
+import neptune from "@assets/images/neptune.png";
 import boomplay from "@assets/images/boomplayer-img.png";
 import gamersmart from "@assets/images/gamersmart-bg.png";
 import loyalblaze from "@assets/images/loyalblaze-bg.png";
@@ -195,19 +195,21 @@ export const projects = [
 		],
 	},
 	{
-		heading: "AI",
-		title: "iWebChat",
-		imgSrc: iwebchat,
-		website: "https://iwebchat.vercel.app",
-		github: "https://github.com/JohnOmoseni/iWebChat",
-		body: "iWebChat is an advanced web application designed to enhance your chatbot experience with cutting-edge AI technology powered by your own data. The platform ensures more engaging and enjoyable interactions with your audience, making communication seamless and efficient.",
+		heading: "DEX",
+		title: "Neptune",
+		imgSrc: neptune,
+		website: "https://neptune-berachain.vercel.app/",
+		github: "https://github.com/JohnOmoseni/neptune-berachain",
+		body: "This DEX platform is designed to provide a comprehensive solution for cryptocurrency trading, catering to both novice and experienced traders. It offers a user-friendly interface, advanced trading features, and robust security measures, all built on the innovative Berachain blockchain. \nFeatures: Token Swapping, Liquidity Pools, Secure Wallet Integration, Cross-Chain Compatibility",
 		tools: [
 			"NextJS",
 			"Typescript",
 			"Tanstack Query",
-			"Recharts",
 			"Redux toolkit",
 			"TailwindCSS",
+			"Berchain",
+			"Viem",
+			"Chart.js",
 		],
 	},
 	{
