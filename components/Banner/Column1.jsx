@@ -73,7 +73,7 @@ function Column1() {
 				creative interfaces that are intuitive and visually engaging. Whether
 				I'm working on a new project or refining an exisiting one, I always
 				strive to create beautiful, user-friendly interfaces that delight and
-				inspire. &#129299;
+				inspire.
 			</motion.p>
 
 			<motion.a

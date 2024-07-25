@@ -76,7 +76,7 @@ function Services() {
 			whileInView="visible"
 			viewport={{ once: true, amount: 0.2 }}
 		>
-			<Heading name="skills" number="03." title="My Superpowers" />
+			<Heading name="skills" number="03." title="My Skills" />
 			<ul className="skills-list">
 				{skillsArray.map((skill, idx) => {
 					return <Skills {...skill} key={idx} />;

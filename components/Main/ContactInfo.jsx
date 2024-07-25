@@ -16,7 +16,7 @@ export const ContactInfo = () => {
 				<span className="icon">
 					<FaPhoneAlt size={16} />
 				</span>
-				<p>+2349012603169</p>
+				<p>+2348103011365</p>
 			</div>
 			<div className="info whatsapp">
 				<span className="icon">

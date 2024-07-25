@@ -10,119 +10,138 @@ import ContactImg from "public/assets/images/img7.png";
 import { ContactInfo } from "./ContactInfo";
 
 const containerVariant = {
-  hidden: { opacity: 0, y: 100 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 1.5, ease: "easeIn" },
-  },
+	hidden: { opacity: 0, y: 100 },
+	visible: {
+		opacity: 1,
+		y: 0,
+		transition: { duration: 1.5, ease: "easeIn" },
+	},
 };
 
 function Contact() {
-  const [inputValues, setInputValues] = useState({ user_name: "", user_email: "", message: "" });
-  const form = useRef();
+	const [inputValues, setInputValues] = useState({
+		user_name: "",
+		user_email: "",
+		message: "",
+	});
+	const form = useRef();
 
-  const handleInputChange = e => {
-    const value = e.target.value;
-    setInputValues(prev => ({ ...prev, [e.target.name]: value }));
-  };
+	const handleInputChange = (e) => {
+		const value = e.target.value;
+		setInputValues((prev) => ({ ...prev, [e.target.name]: value }));
+	};
 
-  const sendEmail = e => {
-    e.preventDefault();
-    if (!inputValues.user_name || !inputValues.user_email) return;
+	const sendEmail = (e) => {
+		e.preventDefault();
+		if (!inputValues.user_name || !inputValues.user_email) return;
 
-    emailjs
-      .sendForm("contact_id", "template_v2u3jr7", form.current, "7vZST2LG77Ar2RrNe")
-      .then(result => {
-        console.log(result.text);
-        console.log("message sent");
-      })
-      .catch(err => {
-        console.log("Error sending email", err);
-      })
-      .finally(() => {
-        form.current.reset();
-        setInputValues(prev => ({ ...prev, user_name: "", user_email: "", message: "" }));
+		emailjs
+			.sendForm(
+				"contact_id",
+				"template_v2u3jr7",
+				form.current,
+				"7vZST2LG77Ar2RrNe"
+			)
+			.then((result) => {
+				console.log(result.text);
+				console.log("message sent");
+			})
+			.catch((err) => {
+				console.log("Error sending email", err);
+			})
+			.finally(() => {
+				form.current.reset();
+				setInputValues((prev) => ({
+					...prev,
+					user_name: "",
+					user_email: "",
+					message: "",
+				}));
 
-        Swal.fire({
-          icon: "success",
-          titleText: "Sent",
-          text: "Your message has been sent successfully fam!",
-          confirmButtonText: "Cool!",
-        });
-      });
-  };
+				Swal.fire({
+					icon: "success",
+					titleText: "Sent",
+					text: "Your message has been sent successfully fam!",
+					confirmButtonText: "Cool!",
+				});
+			});
+	};
 
-  return (
-    <motion.section
-      className="contact-page"
-      id="contact"
-      variants={containerVariant}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.2 }}
-    >
-      <Heading name="contact" number="06. What's Next?" title="Get In Touch" disabled />
-      <p className="subtitle">
-        I'm currently open to joining a new or exisiting team of creative developers and I'm
-        committed to delivering high quality work that meets your needs and exceeds your
-        expectations. Also if you have a question, proposal, idea or you just want to say hi, Go
-        ahead &#128516;
-      </p>
-      
-      <ContactInfo />
+	return (
+		<motion.section
+			className="contact-page"
+			id="contact"
+			variants={containerVariant}
+			initial="hidden"
+			whileInView="visible"
+			viewport={{ once: true, amount: 0.2 }}
+		>
+			<Heading
+				name="contact"
+				number="06. What's Next?"
+				title="Get In Touch"
+				disabled
+			/>
+			<p className="subtitle">
+				I'm currently open to joining a new or exisiting team of creative
+				developers and I'm committed to delivering high quality work that meets
+				your needs and exceeds your expectations. Also if you have a question,
+				proposal, idea or you just want to say hi, Go ahead &#128516;
+			</p>
 
-      <div className="content">
-        <div className="img-container">
-          <Image src={ContactImg} alt="" placeholder="blur" />
-        </div>
+			<ContactInfo />
 
-        <form ref={form} onSubmit={sendEmail}>
-          <div className="form-group">
-            <input
-              type="text"
-              name="user_name"
-              value={inputValues.user_name}
-              placeholder="Your name"
-              required
-              onChange={handleInputChange}
-            />
-          </div>
-          <div className="form-group">
-            <input
-              type="text"
-              name="user_email"
-              value={inputValues.user_email}
-              title="Enter a valid email"
-              placeholder="Your email"
-              required
-              pattern="[a-zA-Z0-9 -_.]+@[a-zA-Z0-9 -_.]+\.[a-z]{2,}"
-              onChange={handleInputChange}
-            />
-          </div>
-          <div className="form-group">
-            <textarea
-              rows="10"
-              name="message"
-              value={inputValues.message}
-              type="text"
-              required
-              placeholder="Your message"
-              onChange={handleInputChange}
-            ></textarea>
-          </div>
+			<div className="content">
+				<div className="img-container">
+					<Image src={ContactImg} alt="" placeholder="blur" />
+				</div>
 
-          <button type="submit" className="send-message">
-            Send message
-            <span>
-              <BiMailSend size={18} fill="#00bd8e" />
-            </span>
-          </button>
-        </form>
-      </div>
-      <h3>Can't wait to hear from you! &#127867; &#128175;</h3>
-    </motion.section>
-  );
+				<form ref={form} onSubmit={sendEmail}>
+					<div className="form-group">
+						<input
+							type="text"
+							name="user_name"
+							value={inputValues.user_name}
+							placeholder="Your name"
+							required
+							onChange={handleInputChange}
+						/>
+					</div>
+					<div className="form-group">
+						<input
+							type="text"
+							name="user_email"
+							value={inputValues.user_email}
+							title="Enter a valid email"
+							placeholder="Your email"
+							required
+							pattern="[a-zA-Z0-9 -_.]+@[a-zA-Z0-9 -_.]+\.[a-z]{2,}"
+							onChange={handleInputChange}
+						/>
+					</div>
+					<div className="form-group">
+						<textarea
+							rows="10"
+							name="message"
+							value={inputValues.message}
+							type="text"
+							required
+							placeholder="Your message"
+							onChange={handleInputChange}
+						></textarea>
+					</div>
+
+					<button type="submit" className="send-message">
+						Send message
+						<span>
+							<BiMailSend size={18} fill="#00bd8e" />
+						</span>
+					</button>
+				</form>
+			</div>
+			<h3>Can't wait to hear from you! &#128175;</h3>
+		</motion.section>
+	);
 }
 
 export default Contact;

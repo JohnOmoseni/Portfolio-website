@@ -11,24 +11,22 @@ import Work from "./Work";
 import PlaceholderImg from "./PlaceholderImg";
 
 function Main({ setOpenModal }) {
-  return (
-    <main>
-      <About />
-      <Work />
-      <Services />
-      <Projects />
+	return (
+		<main>
+			<About />
+			<Work />
+			<Services />
+			<Projects />
 
-      <PlaceholderImg src={sectionImg1} />
+			<PlaceholderImg src={sectionImg1} />
 
-      <Gallery setOpenModal={setOpenModal} />
-      <NewsLetter />
-      <Contact />
+			<Gallery setOpenModal={setOpenModal} />
+			<NewsLetter />
+			<Contact />
 
-      <>
-        <PlaceholderImg src={sectionImg2} text />
-      </>
-    </main>
-  );
+			<PlaceholderImg src={sectionImg2} text />
+		</main>
+	);
 }
 
 export default Main;
