@@ -4,14 +4,16 @@ import bgImg3 from "@assets/images/bgImg3.jpg";
 import bgImg4 from "@assets/images/bgImg4.jpeg";
 
 import forexchatroom from "@assets/images/forexchatroom.png";
-import bugupay from "@assets/images/bugupay.png";
 import movbit from "@assets/images/movbit.png";
-import betbinary from "@assets/images/betbinary.png";
-import neptune from "@assets/images/neptune.png";
 import boomplay from "@assets/images/boomplayer-img.png";
-import gamersmart from "@assets/images/gamersmart-bg.png";
 import loyalblaze from "@assets/images/loyalblaze-bg.png";
 import fontipsums from "@assets/images/fontpalette-bg.png";
+
+import akara from "@assets/images/akara-dashboard.png";
+import david_consult from "@assets/images/david-consult.png";
+import tripiee from "@assets/images/tripiee.png";
+import qataloog from "@assets/images/qataloog.png";
+import bundo from "@assets/images/bundo.png";
 
 import gallery1 from "@assets/images/gallery-1.jpg";
 import gallery2 from "@assets/images/gallery-2.webp";
@@ -84,33 +86,55 @@ export const galleryImages = [
 //Jobs
 export const jobs = [
 	{
-		jobTitle: "Frontend Engineer",
-		company: "Octave Incorporations",
-		link: "https://github.com/orgs/OctaveIncorporations/repositories",
-		year: "October 2023",
+		jobTitle: "Lead Frontend Engineer",
+		company: "Qataloog",
+		link: "https://github.com/Qataloogtech/",
+		year: "September 2024",
 		description: [
-			"Worked closely with designers, backend developers and management team to develop, document and manage the Octave platform",
-			"Proposed and implemented scalable solutions to issues identified with cloud services and applications responsible for communicating with the Octave platform",
-			"Conduct code reviews and ensure adherence to coding standards",
+			"Led the development of a scalable EdTech platform offering curriculum-aligned content and digital classrooms, resulting in increased user retention and engagement.",
+			"Translated complex UI/UX designs into high-performing, accessible web interfaces using React, enhancing cross-device responsiveness and user experience.",
+			"Collaborated across product, design, and engineering teams to ship new features rapidly while maintaining clean, reusable, and maintainable code architecture.",
+		],
+	},
+	{
+		jobTitle: "Frontend Developer",
+		company: "Akara Innovations",
+		link: "https://github.com/Akarateam/",
+		year: "January 2025",
+		description: [
+			"Spearheaded the development of a seamless property investment platform, enabling users to buy fractional stakes in real estate, leading to increased user acquisition and investor engagement.",
+			"Collaborated with backend teams to integrate flexible payment plans and rental income systems, improving platform monetization.",
+			"Enhanced platform responsiveness and UX, reducing bounce rates and improving session duration across devices.",
+		],
+	},
+
+	{
+		jobTitle: "Web Developer",
+		company: "Aussiecare Staffing Solutions",
+		link: "https://github.com/orgs/OctaveIncorporations/repositories",
+		year: "December 2024",
+		description: [
+			"Developed and maintained a robust admin dashboard for a ride-hailing platform, enabling real-time driver and rider management and reducing operational overhead.",
+			"Integrated notification systems, role-based access control, and analytics to support informed admin decisions and improve service coordination.",
+			"Collaborated with product and design teams to launch features on schedule, contributing to a 30% increase in platform efficiency.",
 		],
 	},
 	{
 		jobTitle: "Senior Frontend Engineer",
 		company: "iauconsultingservices",
-		link: "",
+		link: "#",
 		year: "Remote",
 		description: [
 			"Design, development, and implementation of complex frontend features using NextJs, Typescript, React, Redux, JavaScript and other web technologies and leverage REST services and other third-party APIs",
 			"Build scalable products that is user friendly with the use of OpenAI integration.",
 			"Collaborate closely with designers, product managers, and backend engineers to ensure a seamless user experience and minimize complexity",
 			"Troubleshoot and debug issues across multiple browsers and devices",
-			"Optimize applications for maximum speed and scalability",
 		],
 	},
 	{
 		jobTitle: "Freelancer",
 		link: "https://github.com/JohnOmoseni",
-		year: "Present",
+		year: "",
 		description: [
 			"Interfaced with clients on a weekly basis, providing technological expertise and knowledge",
 			"Tested sites in various browsers and devices to ensure cross-browser compatibility and mobile responsiveness",
@@ -124,7 +148,77 @@ export const jobs = [
 // Projects
 export const projects = [
 	{
-		heading: "Finance & Social Media",
+		heading: "Ed-Tech",
+		title: "Qataloog",
+		imgSrc: qataloog,
+		website: "https://qataloog.com/",
+		github: "https://github.com/Qataloogtech/autocreate",
+		body: "Qataloog is a global ed-tech platform delivering curriculum-aligned content to students, institutions, and educators. It empowers publishers to monetize their content, while giving teachers tools to create lessons, manage courses, and track learning outcomes. The platform also features an interactive exam module with automatic grading, analytics, and secure online assessments.",
+		tools: [
+			"React",
+			"Typescript",
+			"Redux Toolkit",
+			"TailwindCSS",
+			"AutoProctor",
+			"Material UI",
+			"TensorFlow",
+			"Stripe",
+			"i18next",
+		],
+	},
+	{
+		heading: "Real Estate",
+		title: "Akara",
+		imgSrc: akara,
+		website: "https://akara.ng",
+		github: "https://github.com/JohnOmoseni/akara-website",
+		body: "Akara is a revolutionary real estate platform offering fractional property ownership and flexible payment plans. Users can invest in affordable housing, earn passive rental income weekly or monthly, and benefit from long-term property value appreciation. It democratizes property investment, making real estate more accessible to everyone.",
+		tools: [
+			"React",
+			"Typescript",
+			"Redux Toolkit",
+			"TailwindCSS",
+			"Recharts",
+			"Flutterwave",
+		],
+	},
+	{
+		heading: "Marketplace",
+		title: "Bundo",
+		imgSrc: bundo,
+		website: "https://bundo.app",
+		github: "#",
+		body: "Bundo is a dynamic digital marketplace that connects buyers with verified vendors in their local area. Vendors can showcase products, manage orders, integrate real-time logistics tracking, and attract nearby customers using powerful geolocation technology. With built-in promotional tools and ad features, vendors can boost visibility, gain new customers, and grow their business effortlessly.",
+		tools: [
+			"NextJS",
+			"Typescript",
+			"Redux Toolkit",
+			"TailwindCSS",
+			"Firebase",
+			"Google Maps API",
+			"Shadcn UI",
+		],
+	},
+	{
+		heading: "Ride Hailing",
+		title: "Tripiee - Admin Dashboard",
+		imgSrc: tripiee,
+		website: "https://tripieeadmin.vercel.app/dashboard",
+		github: "#",
+		body: "Tripiee is an intuitive admin dashboard built for a ride-hailing platform. It enables admins to seamlessly manage drivers, riders, trip data, and platform settings. With real-time updates and smart analytics, Tripiee empowers operational teams to monitor performance, approve registrations, and maintain a smooth transportation ecosystem.",
+		tools: ["React", "Typescript", "Redux Toolkit", "TailwindCSS", "Firebase"],
+	},
+	{
+		heading: "Consultation Firm",
+		title: "DavidConsult",
+		imgSrc: david_consult,
+		website: "https://david-consult.vercel.app/",
+		github: "https://github.com/JohnOmoseni/david-consult",
+		body: "David Consult is a versatile IT and consulting firm focused on empowering businesses with cutting-edge technology and strategic support. From system supplies and software development to IT training and workforce development, we deliver customized solutions that drive growth, efficiency, and innovation. Whether upgrading your tech stack or enhancing your team's capabilities, David Consult is your trusted partner for sustainable success.",
+		tools: ["NextJS", "Typescript", "TailwindCSS", "Shadcn UI"],
+	},
+	{
+		heading: "Finance",
 		title: "Forex Chatroom",
 		imgSrc: forexchatroom,
 		website: "https://fx-business-chatroom.vercel.app",
@@ -138,24 +232,6 @@ export const projects = [
 			"Javascript",
 			"Firebase",
 			"Flutterwave SDK",
-		],
-	},
-	{
-		heading: "Finance",
-		title: "BuguPay",
-		imgSrc: bugupay,
-		website: "https://bugupay.vercel.app",
-		github: "https://github.com/JohnOmoseni/bugupay",
-		body: "BuguPay is a cutting-edge web application designed for smart and convenient bill payments. It offers users a fast, transparent, and secure platform to manage and pay all their bills online with ease.",
-		tools: [
-			"NextJS",
-			"Typescript",
-			"Redux toolkit",
-			"TailwindCSS",
-			"ShadCN",
-			"Paystack SDK",
-			"Firebase",
-			"Framer Motion",
 		],
 	},
 	{
@@ -174,42 +250,6 @@ export const projects = [
 			"Redux toolkit",
 			"TailwindCSS",
 			"Framer Motion",
-		],
-	},
-	{
-		heading: "Betting",
-		title: "BetBinary",
-		imgSrc: betbinary,
-		website: "https://bet-binary.vercel.app",
-		github: "https://github.com/JohnOmoseni/bet-binary",
-		body: "Bet-Binary is a revolutionary Web3 betting platform that allows users to bet and win on a wide range of events, including sports, stocks, and cryptocurrencies. Leveraging the power of blockchain technology, Bet-Binary ensures a transparent, secure, and decentralized betting experience.",
-		tools: [
-			"NextJS",
-			"Javascript",
-			"Tanstack Query",
-			"Tanstack Table",
-			"wagmi",
-			"Viem",
-			"Redux toolkit",
-			"TailwindCSS",
-		],
-	},
-	{
-		heading: "DEX",
-		title: "Neptune",
-		imgSrc: neptune,
-		website: "https://neptune-berachain.vercel.app/",
-		github: "https://github.com/JohnOmoseni/neptune-berachain",
-		body: "This DEX platform is designed to provide a comprehensive solution for cryptocurrency trading, catering to both novice and experienced traders. It offers a user-friendly interface, advanced trading features, and robust security measures, all built on the innovative Berachain blockchain. \nFeatures: Token Swapping, Liquidity Pools, Secure Wallet Integration, Cross-Chain Compatibility",
-		tools: [
-			"NextJS",
-			"Typescript",
-			"Tanstack Query",
-			"Redux toolkit",
-			"TailwindCSS",
-			"Berchain",
-			"Viem",
-			"Chart.js",
 		],
 	},
 	{
@@ -237,15 +277,6 @@ export const projects = [
 		github: "https://github.com/JohnOmoseni/loyal-blaze-design",
 		body: "A Figma design implementation using HTML & CSS/SASS. This project involved bringing a static design to life using a rich palette of colors, precise positioning and captivating shadows. This figma implementation displays a visually stunning design that engages the user and draws them into an exciting user-experience.",
 		tools: ["HTML", "CSS", "Javascript", "Figma"],
-	},
-	{
-		heading: "E-commerce",
-		title: "Gamers Mart",
-		imgSrc: gamersmart,
-		website: "https://gamify-mart.vercel.app",
-		github: "https://github.com/JohnOmoseni/Gamers-mart",
-		body: "An ecommerce game website where users can indulge in their passion for shopping and taking their gaming experience to the next level. This project is designed to cater to all of your gaming needs, providing you with access to an extensive collection of games, from popular titles to new releases.",
-		tools: ["React", "Redux", "Framer-motion", "Sass", "SwiperJS"],
 	},
 	{
 		heading: "Typography",

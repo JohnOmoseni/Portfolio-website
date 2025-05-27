@@ -15,7 +15,7 @@ const animateSubtitle = {
 	hidden: { opacity: 0 },
 	animate: {
 		opacity: 1,
-		transition: { delay: 8, duration: 1.3, type: "tween", ease: "easeIn" },
+		transition: { delay: 6, duration: 1.3, type: "tween", ease: "easeIn" },
 	},
 };
 
@@ -24,7 +24,7 @@ const animateBtn = {
 	animate: {
 		opacity: 1,
 		x: 0,
-		transition: { delay: 8.8, duration: 1, type: "spring" },
+		transition: { delay: 6.8, duration: 1, type: "spring" },
 	},
 };
 

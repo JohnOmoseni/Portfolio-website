@@ -26,22 +26,6 @@ function AboutBody({ variant }) {
 				naturally curious and perpetually working on improving my skills one
 				design problem at a time.
 			</p>
-
-			<div className="tools">
-				<p>
-					Currently, I'm looking to transition into Web3 and Blockchain
-					development.
-					<br /> Here are a few technologies I&lsquo;ve been working with to
-					that effect
-				</p>
-				<ul className="skills">
-					<Skills title="Solidity" />
-					<Skills title="Three.js" />
-					<Skills title="Ether.js" />
-					<Skills title="Leo" />
-					<Skills title="Viem" />
-				</ul>
-			</div>
 		</div>
 	);
 }

@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
 import { bgImages } from "../../constants";
-import { BannerImg } from "./BannerImg";
-import Bubbles from "./Bubbles";
 import Column1 from "./Column1";
 
 function Banner() {
@@ -30,7 +28,6 @@ function Banner() {
 			style={{ backgroundImage: `url(${bgImages[currImg].imgSrc.src})` }}
 		>
 			<Column1 />
-			<BannerImg />
 			{/* <div className="bubbles">
         <Bubbles />
         <Bubbles />

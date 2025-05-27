@@ -1,150 +1,151 @@
-@use '../abstracts/' as *;
-
+@use "../abstracts/" as *;
 
 .jobs {
-  --tab-clr: #64ffda;
+	--tab-clr: #64ffda;
 
-  width: min(100%, 800px);
-  margin: auto;
-  position: relative;
-  isolation: isolate;
+	width: min(100%, 800px);
+	margin: auto;
+	position: relative;
+	isolation: isolate;
 
-  .jobs-content {
-    margin: 3em $pad-200 $pad-200;
-    display: grid;
-    grid-template-rows: max-content 1fr;
-    gap: 2.5em;
+	.jobs-content {
+		margin: 3em $pad-200 $pad-200;
+		display: grid;
+		grid-template-rows: max-content 1fr;
+		gap: 2.5em;
 
-    .tablist {
-      position: relative;
-      display: flex;
-      border-bottom: 2px solid var(--text-grey-300);
+		.tablist {
+			position: relative;
+			display: flex;
+			border-bottom: 2px solid var(--text-grey-300);
 
-      .activeTab-indicator {
-        position: absolute;
-        inset: auto auto 0 0;
-        width: calc(100% / 3 - 8px);
-        height: 2px;
-        margin-bottom: -1px;
-        border-radius: $br-btn;
-        transition: $transition-200;
-        box-shadow: $bs-100;
-        background: var(--tab-clr);
-      }
+			.activeTab-indicator {
+				position: absolute;
+				inset: auto auto 0 0;
+				width: calc(100% / 3 - 8px);
+				height: 2px;
+				margin-bottom: -1px;
+				border-radius: $br-btn;
+				transition: $transition-200;
+				box-shadow: $bs-100;
+				background: var(--tab-clr);
+			}
 
-      .tab-button:first-child.active~.activeTab-indicator {
-        inset: auto auto 0 0;
-      }
+			.tab-button:first-child.active ~ .activeTab-indicator {
+				inset: auto auto 0 0;
+			}
 
-      .tab-button:nth-child(2).active~.activeTab-indicator {
-        inset: auto auto 0 calc(100% / 3);
-      }
+			.tab-button:nth-child(2).active ~ .activeTab-indicator {
+				inset: auto auto 0 calc(100% / 3);
+			}
 
-      .tab-button:nth-child(3).active~.activeTab-indicator {
-        inset: auto 0 0 auto;
-      }
-    }
+			.tab-button:nth-child(3).active ~ .activeTab-indicator {
+				inset: auto 0 0 auto;
+			}
 
-  }
+			.tab-button:nth-child(4).active ~ .activeTab-indicator {
+				inset: 60% auto 0 0;
+			}
+		}
+	}
 
-  .jobs-panels {
-    a.jobtitle {
-      span.title {
-        font-size: $fs-subtitle;
-        letter-spacing: $ls-100;
-        font-family: $ff-primary-header;
-        text-shadow: $ts-100;
-        color: var(--text-grey-100);
-      }
+	.jobs-panels {
+		a.jobtitle {
+			span.title {
+				font-size: $fs-subtitle;
+				letter-spacing: $ls-100;
+				font-family: $ff-primary-header;
+				text-shadow: $ts-100;
+				color: var(--text-grey-100);
+			}
 
-      span.company,
-      span.company span {
-        color: var(--tab-clr);
-        font-size: 1.2rem;
-      }
-    }
+			span.company,
+			span.company span {
+				color: var(--tab-clr);
+				font-size: 1.2rem;
+			}
+		}
 
-    .years {
-      letter-spacing: $ls-100;
-      margin: $pad-150 0;
-    }
+		.years {
+			letter-spacing: $ls-100;
+			margin: $pad-150 0;
+		}
 
-    .description {
-      margin: $pad-500 0;
-      @include flex-column;
+		.description {
+			margin: $pad-500 0;
+			@include flex-column;
 
-      li {
-        list-style-type: disc;
-        margin-left: $pad-400;
-        letter-spacing: $ls-100;
-        line-height: 1.8;
+			li {
+				list-style-type: disc;
+				margin-left: $pad-400;
+				letter-spacing: $ls-100;
+				line-height: 1.8;
 
-        &::marker {
-          color: var(--tab-clr);
-        }
-      }
-    }
-  }
+				&::marker {
+					color: var(--tab-clr);
+				}
+			}
+		}
+	}
 
-  .layout-img {
-    position: absolute;
-    bottom: -10%;
-    left: 80%;
-    z-index: -1;
-    width: 200px;
-    height: 200px;
-    user-select: none;
-  }
+	.layout-img {
+		position: absolute;
+		bottom: -10%;
+		left: 80%;
+		z-index: -1;
+		width: 200px;
+		height: 200px;
+		user-select: none;
+	}
 }
 
 @mixin work-tablet() {
-  .jobs {
-    .layout-img {
-      bottom: 10%;
-      left: 100%;
-      width: 300px;
-      height: 300px;
-    }
+	.jobs {
+		.layout-img {
+			bottom: 10%;
+			left: 100%;
+			width: 300px;
+			height: 300px;
+		}
 
-    .jobs-content {
-      min-height: 340px;
-      margin: 4em $pad-200 $pad-200;
-      grid-template-columns: max-content 1fr;
-      gap: 2.5em;
+		.jobs-content {
+			min-height: 340px;
+			margin: 4em $pad-200 $pad-200;
+			grid-template-columns: max-content 1fr;
+			gap: 2.5em;
 
-      .tablist {
-        align-self: flex-start;
-        display: block;
-        border: none;
+			.tablist {
+				align-self: flex-start;
+				display: block;
+				border: none;
 
-        .tab-button {
-          border-left: 2px solid #333333b1;
-        }
+				.tab-button {
+					border-left: 2px solid #333333b1;
+				}
 
-        .activeTab-indicator {
-          inset: 0 auto auto 0;
-          margin: 0;
-          width: 2px;
-          height: 45px;
-        }
+				.activeTab-indicator {
+					inset: 0 auto auto 0;
+					margin: 0;
+					width: 2px;
+					height: 45px;
+				}
 
-        .tab-button:first-child.active~.activeTab-indicator {
-          inset: 0 auto auto 0;
-        }
+				.tab-button:first-child.active ~ .activeTab-indicator {
+					inset: 0 auto auto 0;
+				}
 
-        .tab-button:nth-child(2).active~.activeTab-indicator {
-          inset: calc(45px * 1) auto auto 0;
-        }
+				.tab-button:nth-child(2).active ~ .activeTab-indicator {
+					inset: calc(45px * 1) auto auto 0;
+				}
 
-        .tab-button:nth-child(3).active~.activeTab-indicator {
-          inset: calc(45px * 2) auto auto 0
-        }
+				.tab-button:nth-child(3).active ~ .activeTab-indicator {
+					inset: calc(45px * 2) auto auto 0;
+				}
 
-        .tab-button:last-of-type.active~.activeTab-indicator {
-          inset: auto auto 0 0;
-        }
-      }
-
-    }
-  }
+				.tab-button:last-of-type.active ~ .activeTab-indicator {
+					inset: auto auto 0 0;
+				}
+			}
+		}
+	}
 }

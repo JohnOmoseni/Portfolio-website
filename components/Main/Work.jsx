@@ -40,23 +40,36 @@ function Work() {
 						onClick={() => changeTab("tab-0")}
 						id="tab-0"
 						idx={0}
-						title="Octave"
+						title="Qataloog"
 					/>
 					<Tabs
 						activeTab={activeTab}
 						onClick={() => changeTab("tab-1")}
 						id="tab-1"
 						idx={1}
-						title="IAU"
+						title="Akara"
 					/>
 					<Tabs
 						activeTab={activeTab}
 						onClick={() => changeTab("tab-2")}
 						id="tab-2"
 						idx={2}
+						title="Aussiecare Staffing"
+					/>
+					<Tabs
+						activeTab={activeTab}
+						onClick={() => changeTab("tab-3")}
+						id="tab-3"
+						idx={3}
+						title="iauconsultingservices"
+					/>
+					<Tabs
+						activeTab={activeTab}
+						onClick={() => changeTab("tab-4")}
+						id="tab-4"
+						idx={4}
 						title="Freelancer"
 					/>
-
 					<div className="activeTab-indicator"></div>
 				</div>
 
@@ -64,6 +77,8 @@ function Work() {
 					<TabsPanel activeTab={activeTab} id="tab-0" idx="0" />
 					<TabsPanel activeTab={activeTab} id="tab-1" idx="1" />
 					<TabsPanel activeTab={activeTab} id="tab-2" idx="2" />
+					<TabsPanel activeTab={activeTab} id="tab-3" idx="3" />
+					<TabsPanel activeTab={activeTab} id="tab-4" idx="4" />
 				</div>
 			</div>
 

@@ -10,7 +10,6 @@ function RotateWords() {
 
 	const wordsToRotate = [
 		"Frontend Developer",
-		"UI/UX Designer",
 		"Mobile App developer",
 		"Software Engineer",
 	];
@@ -21,7 +20,7 @@ function RotateWords() {
 		if (isTimeout) {
 			ticker = setTimeout(() => {
 				tick();
-			}, 12000);
+			}, 10000);
 			setIsTimeout(false);
 			return () => clearTimeout(ticker);
 		} else {
