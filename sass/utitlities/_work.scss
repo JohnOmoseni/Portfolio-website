@@ -18,6 +18,7 @@
 			position: relative;
 			display: flex;
 			border-bottom: 2px solid var(--text-grey-300);
+			overflow: auto hidden;
 
 			.activeTab-indicator {
 				position: absolute;
@@ -29,6 +30,7 @@
 				transition: $transition-200;
 				box-shadow: $bs-100;
 				background: var(--tab-clr);
+				display: none;
 			}
 
 			.tab-button:first-child.active ~ .activeTab-indicator {
