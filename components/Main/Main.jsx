@@ -1,6 +1,3 @@
-import sectionImg1 from "@assets/images/img8.png";
-import sectionImg2 from "@assets/images/img3.png";
-
 import About from "./About";
 import Projects from "./Projects";
 import NewsLetter from "./NewsLetter";
@@ -18,13 +15,13 @@ function Main({ setOpenModal }) {
 			<Services />
 			<Projects />
 
-			<PlaceholderImg src={sectionImg1} />
+			{/* <PlaceholderImg src={sectionImg1} /> */}
 
 			<Gallery setOpenModal={setOpenModal} />
 			<NewsLetter />
 			<Contact />
 
-			<PlaceholderImg src={sectionImg2} text />
+			{/* <PlaceholderImg src={sectionImg2} text /> */}
 		</main>
 	);
 }
